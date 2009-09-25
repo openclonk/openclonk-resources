@@ -1,0 +1,14 @@
+Quick look-up who participated in the creation of what. The real name of the artists may be found in their profile pages in our forum.
+If not otherwise noted, the license is all CC-BY 3.0
+
+models
+-------------------------------------------------------------------------------
+balloon			-		Matthias, Marky
+elevator		-		Mimmo, Newton
+lorry			-		Mimmo, Newton
+steam_power		-		Nachtfalter
+wind_generator	-		Mimmo, Newton
+wolf			-		Mimmo, ModernClonker, Ringwaul
+workshop		-		Ringwaul, Newton
+
+
