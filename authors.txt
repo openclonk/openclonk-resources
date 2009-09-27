@@ -8,6 +8,7 @@ elevator		-		Mimmo, Newton
 lorry			-		Mimmo, Newton
 steam_power		-		Nachtfalter
 wind_generator	-		Mimmo, Newton
+wipf			-		Ringwaul
 wolf			-		Mimmo, ModernClonker, Ringwaul
 workshop		-		Ringwaul, Newton
 
