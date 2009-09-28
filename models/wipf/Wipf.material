@@ -1,70 +1,22 @@
-material material01
+material Wipf
 {
 	receive_shadows on
 	technique
 	{
 		pass
 		{
-			ambient 0.500000 0.500000 0.500000 1.000000
-			diffuse 0.800000 0.800000 0.800000 1.000000
-			specular 0.500000 0.500000 0.500000 1.000000 12.500000
-			emissive 0.000000 0.000000 0.000000 1.000000
-		}
-	}
-}
-material material02
-{
-	receive_shadows on
-	technique
-	{
-		pass
-		{
-			ambient 0.500000 0.500000 0.500000 1.000000
-			diffuse 0.047059 0.031373 0.003137 1.000000
-			specular 0.500000 0.500000 0.500000 1.000000 12.500000
-			emissive 0.000000 0.000000 0.000000 1.000000
-		}
-	}
-}
-material Dark Fur
-{
-	receive_shadows on
-	technique
-	{
-		pass
-		{
-			ambient 0.500000 0.500000 0.500000 1.000000
-			diffuse 0.555294 0.323137 0.069020 1.000000
-			specular 0.000000 0.000000 0.000000 1.000000 12.500000
-			emissive 0.000000 0.000000 0.000000 1.000000
-		}
-	}
-}
-material  -- default --
-{
-	receive_shadows on
-	technique
-	{
-		pass
-		{
-			ambient 0.500000 0.500000 0.500000 1.000000
-			diffuse 0.702745 0.702745 0.702745 1.000000
-			specular 0.500000 0.500000 0.500000 1.000000 12.500000
-			emissive 0.000000 0.000000 0.000000 1.000000
-		}
-	}
-}
-material Light Fur
-{
-	receive_shadows on
-	technique
-	{
-		pass
-		{
-			ambient 0.500000 0.500000 0.500000 1.000000
-			diffuse 0.627451 0.436078 0.081569 1.000000
-			specular 0.000000 0.000000 0.000000 1.000000 12.500000
-			emissive 0.000000 0.000000 0.000000 1.000000
+			ambient 0.500000 0.500000 0.500000 0.000000
+			diffuse 0.800000 0.800000 0.800000 0.000000
+			specular 0.000000 0.000000 0.000000 0.000000 12.500000
+			emissive 0.000000 0.000000 0.000000 0.000000
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture wipf-uv.png
+				tex_address_mode wrap
+				filtering trilinear
+			}
 		}
 	}
 }
