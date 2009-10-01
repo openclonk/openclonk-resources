@@ -9,7 +9,7 @@ lorry			-		Mimmo, Newton
 steam_power		-		Nachtfalter
 wind_generator	-		Mimmo, Newton
 wipf			-		Ringwaul
-wolf			-		Mimmo, ModernClonker, Ringwaul
+wolf			-		Mimmo, ModernClonker, Newton, Ringwaul
 workshop		-		Ringwaul, Newton
 
 
