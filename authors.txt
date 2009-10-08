@@ -6,6 +6,7 @@ models
 balloon			-		Matthias, Marky
 elevator		-		Mimmo, Newton
 lorry			-		Mimmo, Newton
+shark			-		Ringwaul
 steam_power		-		Nachtfalter
 wind_generator	-		Mimmo, Newton
 wipf			-		Ringwaul
