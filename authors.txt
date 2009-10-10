@@ -5,6 +5,7 @@ models
 -------------------------------------------------------------------------------
 balloon			-		Matthias, Marky
 elevator		-		Mimmo, Newton
+elevator cabine 	- 		Mimmo
 lorry			-		Mimmo, Newton
 shark			-		Ringwaul
 steam_power		-		Nachtfalter
