@@ -4,9 +4,9 @@ If not otherwise noted, the license is all CC-BY 3.0
 models
 -------------------------------------------------------------------------------
 balloon			-		Matthias, Marky
-cannon		-		Ringwaul
+cannon			-		Ringwaul
 elevator		-		Mimmo, Newton
-elevator cabine 	- 		Mimmo
+elevator cabine - 		Mimmo
 lorry			-		Mimmo, Newton
 shark			-		Ringwaul
 steam_power		-		Nachtfalter
@@ -14,5 +14,5 @@ wind_generator	-		Mimmo, Newton
 wipf			-		Ringwaul
 wolf			-		Mimmo, ModernClonker, Newton, Ringwaul
 workshop		-		Ringwaul, Newton
-
+foundry			-		Faby
 
