@@ -14,5 +14,5 @@ wind_generator	-		Mimmo, Newton
 wipf			-		Ringwaul
 wolf			-		Mimmo, ModernClonker, Newton, Ringwaul
 workshop		-		Ringwaul, Newton
-foundry			-		Faby
+foundry			-		Faby, Newton
 
