@@ -5,14 +5,20 @@ models
 -------------------------------------------------------------------------------
 balloon			-		Matthias, Marky
 cannon			-		Ringwaul
+clonk			-		Randrian
+female clonk	-		Ringwaul
+dragon			-		Ringwaul
 elevator		-		Mimmo, Newton
 elevator cabine - 		Mimmo
+foundry			-		Faby, Newton
+Icons			-		Ringwaul
 lorry			-		Mimmo, Newton
 shark			-		Ringwaul
 steam_power		-		Nachtfalter
+Sword			-		Ringwaul
 wind_generator	-		Mimmo, Newton
 wipf			-		Ringwaul
 wolf			-		Mimmo, ModernClonker, Newton, Ringwaul
+wooden_cabin	-		Faby, Ringwaul
 workshop		-		Ringwaul, Newton
-foundry			-		Faby, Newton
 
