@@ -13,6 +13,7 @@ elevator cabine - 		Mimmo
 foundry			-		Faby, Newton
 Icons			-		Ringwaul
 lorry			-		Mimmo, Newton
+musket			-		Ringwaul
 shark			-		Ringwaul
 steam_power		-		Nachtfalter
 Sword			-		Ringwaul
