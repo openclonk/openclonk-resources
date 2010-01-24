@@ -15,6 +15,7 @@ Icons			-		Ringwaul
 lorry			-		Mimmo, Newton
 musket			-		Ringwaul
 shark			-		Ringwaul
+shovel			-		Ringwaul
 steam_power		-		Nachtfalter
 Sword			-		Ringwaul
 wind_generator	-		Mimmo, Newton
