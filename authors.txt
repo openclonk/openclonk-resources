@@ -6,6 +6,7 @@ models
 balloon			-		Matthias, Marky
 cannon			-		Ringwaul
 clonk			-		Randrian
+controllers		-		Ringwaul
 female clonk	-		Ringwaul
 dragon			-		Ringwaul
 elevator		-		Mimmo, Newton
