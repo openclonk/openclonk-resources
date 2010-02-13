@@ -4,6 +4,7 @@ If not otherwise noted, the license is all CC-BY 3.0
 models
 -------------------------------------------------------------------------------
 balloon			-		Matthias, Marky
+boompack		-		Ringwaul
 cannon			-		Ringwaul
 clonk			-		Randrian
 controllers		-		Ringwaul
