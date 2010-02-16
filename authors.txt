@@ -15,6 +15,7 @@ elevator cabine - 		Mimmo
 foundry			-		Faby, Newton
 Icons			-		Ringwaul
 javelin			-		Ringwaul
+levitation_orb	-		Ringwaul
 lorry			-		Mimmo, Newton
 musket			-		Ringwaul
 resources		-		AlteredARMOR
