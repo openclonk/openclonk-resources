@@ -1,33 +1,58 @@
 Quick look-up who participated in the creation of what. The real name of the artists may be found in their profile pages in our forum.
 If not otherwise noted, the license is all CC-BY 3.0
 
-models
--------------------------------------------------------------------------------
-balloon			-		Matthias, Marky
-boompack		-		Ringwaul
-cannon			-		Ringwaul
-clonk			-		Randrian
-controllers		-		Ringwaul
-female clonk	-		Ringwaul
-dragon			-		Ringwaul
-elevator		-		Mimmo, Newton
-elevator cabine - 		Mimmo
-foundry			-		Faby, Newton
-grass			-		Ringwaul
-Icons			-		Ringwaul
-javelin			-		Ringwaul
-levitation_orb	-		Ringwaul
-lorry			-		Mimmo, Newton
-musket			-		Ringwaul
-resources		-		AlteredARMOR
-shark			-		Ringwaul
-shield			-		Ringwaul
-shovel			-		Ringwaul
-steam_power		-		Nachtfalter
-Sword			-		Ringwaul
-wind_generator	-		Mimmo, Newton
-wipf			-		Ringwaul
-wolf			-		Mimmo, ModernClonker, Newton, Ringwaul
-wooden_cabin	-		Faby, Ringwaul
-workshop		-		Ringwaul, Newton
+graphics
+===============================================================================
+(all)				-	Newton
 
+models
+===============================================================================
+
+Buildings
+-------------------------------------------------------------------------------
+elevator			-	Mimmo, Newton
+foundry				-	Faby, Newton
+steam_power			-	Nachtfalter, Newton
+wind_generator		-	Mimmo, Newton
+wooden_cabin		-	Faby, Ringwaul
+workshop			-	Ringwaul, Newton
+
+Decoration
+-------------------------------------------------------------------------------
+grass				-	Ringwaul
+
+Icons
+-------------------------------------------------------------------------------
+controllers (all)	-	Ringwaul
+HUD					-	Ringwaul
+
+Items
+-------------------------------------------------------------------------------
+boompack			-	Ringwaul
+bow					-	???
+club				-	Randrian
+dynamite			-	AlteredARMOR
+grappler			-	AlteredARMOR
+javelin				-	Ringwaul
+levitation_orb		-	Ringwaul
+metal				-	AlteredARMOR
+musket				-	Ringwaul
+resources (all)		-	AlteredARMOR
+shield				-	Ringwaul
+shovel				-	Ringwaul
+sword				-	Ringwaul
+
+Livings
+-------------------------------------------------------------------------------
+clonk				-	Randrian
+female clonk		-	Ringwaul
+dragon				-	Ringwaul
+shark				-	Ringwaul
+wipf				-	Ringwaul
+wolf				-	Mimmo, ModernClonker, Newton, Ringwaul
+
+Vehicles
+-------------------------------------------------------------------------------
+balloon				-	Matthias, Marky
+cannon				-	Ringwaul
+lorry				-	Mimmo, Newton
