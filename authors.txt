@@ -29,7 +29,7 @@ HUD					-	Ringwaul
 Items
 -------------------------------------------------------------------------------
 boompack			-	Ringwaul
-bow					-	???
+bow					-	Ringwaul
 club				-	Randrian
 dynamite			-	AlteredARMOR
 grappler			-	AlteredARMOR
@@ -53,6 +53,7 @@ wolf				-	Mimmo, ModernClonker, Newton, Ringwaul
 
 Vehicles
 -------------------------------------------------------------------------------
+airship				-	Ringwaul
 balloon				-	Matthias, Marky
 cannon				-	Ringwaul
 lorry				-	Mimmo, Newton
