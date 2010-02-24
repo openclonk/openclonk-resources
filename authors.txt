@@ -56,4 +56,5 @@ Vehicles
 airship				-	Ringwaul
 balloon				-	Matthias, Marky
 cannon				-	Ringwaul
+gatling_gun			-	Ringwaul
 lorry				-	Mimmo, Newton
