@@ -31,6 +31,7 @@ Items
 boompack			-	Ringwaul
 bow					-	Ringwaul
 club				-	Randrian
+crossbow			-	Ringwaul
 diving_helmet		-	Ringwaul
 dynamite			-	AlteredARMOR
 grappler			-	AlteredARMOR
@@ -41,7 +42,7 @@ musket				-	Ringwaul
 resources (all)		-	AlteredARMOR
 shield				-	Ringwaul
 shovel				-	Ringwaul
-sword				-	Ringwaul
+swords				-	Ringwaul
 
 Livings
 -------------------------------------------------------------------------------
