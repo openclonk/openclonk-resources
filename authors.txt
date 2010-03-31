@@ -40,9 +40,12 @@ levitation_orb		-	Ringwaul
 metal				-	AlteredARMOR
 musket				-	Ringwaul
 resources (all)		-	AlteredARMOR
+rope                -   AlteredARMOR
+rope_ladder         -   AlteredARMOR
 shield				-	Ringwaul
 shovel				-	Ringwaul
 swords				-	Ringwaul
+wire_roll           -   AlteredARMOR
 
 Livings
 -------------------------------------------------------------------------------
@@ -58,5 +61,6 @@ Vehicles
 airship				-	Ringwaul
 balloon				-	Matthias, Marky
 cannon				-	Ringwaul
+catapult            -   AlteredARMOR
 gatling_gun			-	Ringwaul
 lorry				-	Mimmo, Newton
