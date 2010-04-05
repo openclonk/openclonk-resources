@@ -35,6 +35,7 @@ crossbow			-	Ringwaul
 diving_helmet		-	Ringwaul
 dynamite			-	AlteredARMOR
 grappler			-	AlteredARMOR
+great_hammer		-	Ringwaul
 javelin				-	Ringwaul
 levitation_orb		-	Ringwaul
 metal				-	AlteredARMOR
