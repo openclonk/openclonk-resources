@@ -40,6 +40,7 @@ javelin				-	Ringwaul
 levitation_orb		-	Ringwaul
 metal				-	AlteredARMOR
 musket				-	Ringwaul
+pickaxe				-	Ringwaul
 resources (all)		-	AlteredARMOR
 rope                -   AlteredARMOR
 rope_ladder         -   AlteredARMOR
