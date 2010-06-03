@@ -10,6 +10,7 @@ models
 
 Buildings
 -------------------------------------------------------------------------------
+chest				-	Ringwaul
 elevator			-	Mimmo, Newton
 foundry				-	Faby, Newton
 steam_power			-	Nachtfalter, Newton
