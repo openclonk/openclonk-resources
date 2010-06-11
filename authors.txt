@@ -44,6 +44,7 @@ musket				-	Ringwaul
 pickaxe				-	Ringwaul
 resources (all)		-	AlteredARMOR
 rope                -   AlteredARMOR
+rope_balloon		-	Ringwaul
 rope_ladder         -   AlteredARMOR
 shield				-	Ringwaul
 shovel				-	Ringwaul
