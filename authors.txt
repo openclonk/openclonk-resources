@@ -21,6 +21,7 @@ workshop			-	Ringwaul, Newton
 Decoration
 -------------------------------------------------------------------------------
 grass				-	Ringwaul
+tree				-	Ringwaul
 
 Icons
 -------------------------------------------------------------------------------
@@ -40,7 +41,7 @@ great_hammer		-	Ringwaul
 javelin				-	Ringwaul
 levitation_orb		-	Ringwaul
 metal				-	AlteredARMOR
-musket				-	Ringwaul
+muskets				-	Ringwaul
 pickaxe				-	Ringwaul
 resources (all)		-	AlteredARMOR
 rope                -   AlteredARMOR
