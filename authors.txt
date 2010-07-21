@@ -3,7 +3,8 @@ If not otherwise noted, the license is all CC-BY 3.0
 
 graphics
 ===============================================================================
-(all)				-	Newton
+(all others)		-	Newton
+backpack			-	Ringwaul
 
 models
 ===============================================================================
@@ -21,6 +22,8 @@ workshop			-	Ringwaul, Newton
 Decoration
 -------------------------------------------------------------------------------
 grass				-	Ringwaul
+mushroom			-	Ringwaul
+seaweed				-	Ringwaul
 tree				-	Ringwaul
 
 Icons
