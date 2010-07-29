@@ -32,7 +32,6 @@ from Blender.Mathutils import *
 modelsize = tuple([1.0,1.0,1.0])
 
 def ApplyScale(tup):
-	print modelsize
 	return tuple([modelsize[0]*tup[0], modelsize[1]*tup[1], modelsize[2]*tup[2]])
 
 # TODO: Facade for Blender objects
@@ -172,16 +171,22 @@ class ArmatureAnimation:
 		## export pose frame by frame
 		bArmatureObject = armatureExporter.getArmatureObject()
 		meshObjectSpaceTransformation = armatureExporter.getAdditionalRootBoneTransformation()
-		for frame in range(startFrame, endFrame + 1):
+		for frame in range(startFrame, endFrame + 3):
 			# frameTime
 			frameTime = (frame - startFrame)/float(fps)
 			
 			# evaluate pose for current frame
 			Blender.Set('curframe', frame)
-			Blender.Window.Redraw()
+#			Blender.Window.Redraw()
+			bArmatureObject.evaluatePose(frame)
+			Blender.Set('curframe', frame)
 			bArmatureObject.evaluatePose(frame)
 			pose = bArmatureObject.getPose()
-			
+
+			print str(frame) + " " + str(endFrame)
+			if frame > endFrame:
+				print "continue"
+				continue
 			# tracks on the stack do not have unprocessed parent tracks
 			stack = rootTrackList[:]
 			# set keyframes

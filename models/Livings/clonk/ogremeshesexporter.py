@@ -1096,6 +1096,7 @@ else:
 				animationList.append(["HangleStand","",1,61]);
 				animationList.append(["ThrowArms","",-1,-1]);
 				animationList.append(["Jump","",-1,-1]);
+				animationList.append(["Push","",-1,-1]);
 				animationList.append(["Swim","",-1,-1]);
 #				animationList.append(["SwimTurn","",-1,-1]);
 				animationList.append(["SwimStand","",-1,-1]);
@@ -1107,9 +1108,10 @@ else:
 				animationList.append(["ScaleHands","",-1,-1]);
 				animationList.append(["ScaleHands2","",-1,-1]);
 				animationList.append(["ScaleTop","",-1,-1]);
-				animationList.append(["StrikeArms","",-1,-1]);
-				animationList.append(["Strike2Arms","",-1,-1]);
-				animationList.append(["Strike3Arms","",-1,-1]);
+				animationList.append(["SwordStrikeL1Arms","",-1,-1]);
+				animationList.append(["SwordStrikeL2Arms","",-1,-1]);
+				animationList.append(["SwordStrikeR1Arms","",-1,-1]);
+				animationList.append(["SwordStrikeR2Arms","",-1,-1]);
 				animationList.append(["BowAimArmsImproved","BowAimArms",-1,-1]);
 				animationList.append(["BowLoadArms","",-1,-1]);
 				animationList.append(["BowWalk","",-1,-1]);
@@ -1146,6 +1148,12 @@ else:
 				animationList.append(["IdleHandstrech", "", -1, -1]);
 				animationList.append(["Inside", "", -1, -1]);
 				animationList.append(["StrikePickaxe", "", -1, -1]);
+
+				animationList.append(["CarryCrossbow","",-1,-1]);
+				animationList.append(["CrossbowAimArms","",-1,-1]);
+
+				animationList.append(["OnRope","",-1,-1]);
+				animationList.append(["RopeClimb","",-1,-1]);
 #				animationList.append(["Empty","",1,1]);
 				if animationList and len(animationList):
 					validActionNames = [action.getName() for action in self.actionList]

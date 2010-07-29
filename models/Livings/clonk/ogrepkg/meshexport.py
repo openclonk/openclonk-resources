@@ -41,7 +41,6 @@ OGRE_OPENGL_VERTEXCOLOUR = 0
 modelsize = tuple([1.0,1.0,1.0])
 
 def ApplyScale(tup):
-	print modelsize
 	return tuple([modelsize[0]*tup[0], modelsize[1]*tup[1], modelsize[2]*tup[2]])
 
 class Vertex:
