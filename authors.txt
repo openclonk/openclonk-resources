@@ -4,8 +4,8 @@ If not otherwise noted, the license is all CC-BY 3.0
 graphics
 ===============================================================================
 (all others)		-	Newton
-backpack			-	Ringwaul
 Loader				-	Ringwaul
+OpenClonkLogo		-	Spell
 
 models
 ===============================================================================
@@ -31,6 +31,7 @@ Icons
 -------------------------------------------------------------------------------
 controllers (all)	-	Ringwaul
 HUD					-	Ringwaul
+backpack			-	Ringwaul
 
 Items
 -------------------------------------------------------------------------------
