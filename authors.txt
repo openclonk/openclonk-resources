@@ -74,3 +74,8 @@ cannon				-	Ringwaul
 catapult            -   AlteredARMOR
 gatling_gun			-	Ringwaul
 lorry				-	Mimmo, Newton
+
+font
+===============================================================================
+Endeavour.sfd			-	Jan Lücker, Günther
+
