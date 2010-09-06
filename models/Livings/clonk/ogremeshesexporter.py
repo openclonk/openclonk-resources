@@ -1159,6 +1159,7 @@ else:
 				animationList.append(["RopeClimb","",-1,-1]);
 				animationList.append(["RopeDown","",-1,-1]);
 				animationList.append(["RopeSwing","",-1,-1]);
+				animationList.append(["Eat","",-1,-1]);
 #				animationList.append(["Empty","",1,1]);
 				if animationList and len(animationList):
 					validActionNames = [action.getName() for action in self.actionList]
