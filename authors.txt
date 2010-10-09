@@ -5,8 +5,9 @@ graphics
 ===============================================================================
 (all others)		-	Newton
 Loader				-	Ringwaul
+GUI icons			-	Ringwaul
 OpenClonkLogo		-	Spell
-Icon                    -       Spell
+OC icon				-	Spell
 
 models
 ===============================================================================
@@ -65,7 +66,7 @@ female clonk		-	Ringwaul
 dragon				-	Ringwaul
 shark				-	Ringwaul
 wipf				-	Ringwaul
-wolf				-	Mimmo, ModernClonker, Newton, Ringwaul
+wolf				-	Mimmo, Spell, Newton, Ringwaul
 
 Vehicles
 -------------------------------------------------------------------------------
@@ -78,5 +79,5 @@ lorry				-	Mimmo, Newton
 
 font
 ===============================================================================
-Endeavour.sfd			-	Jan Lücker, Günther
+Endeavour.sfd		-	Jan Lücker, Günther
 
