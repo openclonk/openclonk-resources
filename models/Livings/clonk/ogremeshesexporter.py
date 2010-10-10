@@ -1109,10 +1109,11 @@ else:
 				animationList.append(["ScaleHands","",-1,-1]);
 				animationList.append(["ScaleHands2","",-1,-1]);
 				animationList.append(["ScaleTop","",-1,-1]);
-				animationList.append(["SwordStrikeL1Arms","",-1,-1]);
-				animationList.append(["SwordStrikeL2Arms","",-1,-1]);
-				animationList.append(["SwordStrikeR1Arms","",-1,-1]);
-				animationList.append(["SwordStrikeR2Arms","",-1,-1]);
+				animationList.append(["SwordSlash1.R","",-1,-1]);
+				animationList.append(["SwordSlash2.R","",-1,-1]);
+				animationList.append(["SwordJump1.R","",-1,-1]);
+				animationList.append(["SwordJump2.R","",-1,-1]);
+				animationList.append(["SwordJump3.R","",-1,-1]);
 				animationList.append(["ShieldArmsL","",-1,-1]);
 				animationList.append(["ShieldArmsR","",-1,-1]);
 				animationList.append(["BowAimArmsImproved","BowAimArms",-1,-1]);
