@@ -62,6 +62,7 @@ wire_roll           -   AlteredARMOR
 Livings
 -------------------------------------------------------------------------------
 clonk				-	Randrian
+crazyclonk			-	Pluto, Newton
 female clonk		-	Ringwaul
 dragon				-	Ringwaul
 shark				-	Ringwaul
