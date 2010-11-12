@@ -74,7 +74,7 @@ Vehicles
 airship				-	Ringwaul
 balloon				-	Matthias, Marky
 cannon				-	Ringwaul
-catapult            -   AlteredARMOR
+catapult            -   AlteredARMOR, Ringwaul
 gatling_gun			-	Ringwaul
 lorry				-	Mimmo, Newton
 
