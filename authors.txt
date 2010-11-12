@@ -4,7 +4,6 @@ If not otherwise noted, the license is all CC-BY 3.0
 graphics
 ===============================================================================
 (all others)		-	Newton
-Loader				-	Ringwaul
 GUI icons			-	Ringwaul
 OpenClonkLogo		-	Spell
 OC icon				-	Spell
@@ -27,6 +26,7 @@ Decoration
 grass				-	Ringwaul
 mushroom			-	Ringwaul
 seaweed				-	Ringwaul
+target				-	Ringwaul
 tree				-	Ringwaul
 
 Icons
@@ -37,6 +37,7 @@ backpack			-	Ringwaul
 
 Items
 -------------------------------------------------------------------------------
+barrel/powderkeg	-	Ringwaul
 boompack			-	Ringwaul
 bow					-	Ringwaul
 club				-	Randrian
@@ -71,6 +72,7 @@ wolf				-	Mimmo, Spell, Newton, Ringwaul
 
 Vehicles
 -------------------------------------------------------------------------------
+airplane			-	Ringwaul
 airship				-	Ringwaul
 balloon				-	Matthias, Marky
 cannon				-	Ringwaul
