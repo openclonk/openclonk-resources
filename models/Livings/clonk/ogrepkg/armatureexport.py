@@ -30,6 +30,8 @@ import Blender.Mathutils
 from Blender.Mathutils import *
 
 modelsize = tuple([1.0,1.0,1.0])
+animation_export_groups = []
+animation_export_groupList = []
 
 def ApplyScale(tup):
 	return tuple([modelsize[0]*tup[0], modelsize[1]*tup[1], modelsize[2]*tup[2]])
@@ -208,42 +210,84 @@ class ArmatureAnimation:
 		armatureExporter.getArmatureObject().evaluatePose(frameAtExportTime)
 		return
 	def write(self, f, indentation=0):
+		global animation_export_groups,animation_export_groupList
 		Log.getSingleton().logInfo("Writing skeleton animation \"%s\"." % self.name)
 		f.write(indent(indentation) + "<animation name=\"%s\" length=\"%f\">\n" % (self.name, self.length))
 		if (len(self.trackList) > 0):
 			f.write(indent(indentation + 1) + "<tracks>\n")
+			groupName = 0
+			group = 0
+			print self.name
+			for pair in animation_export_groupList:
+				if pair[0] == self.name:
+					groupName = pair[1]
+					print "GroupName: "+groupName
+			if groupName:
+				for test in animation_export_groups:
+					if test[0] == groupName:
+						group = test
+						break
+			print "Group: "+str(group)
 			for track in self.trackList:
-				print self.name[-4:]
-				print track.name[0:12]
-				if track.name[0:9] == "eye_upper":
-					if self.name == "CloseEyes":
-						track.write(f, indentation + 2, 1)
-				elif self.name[0:5] == "Carry":
-					if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
-						if track.name[0:13] != "Root" and track.name != "skeleton_head" and track.name != "skeleton_body":
-							track.write(f, indentation + 2, 1)
-				elif self.name[0:9] == "CarrySpear":
-					if track.name[-1:] == ".R":
-						if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
-							if track.name[0:13] != "Root" and track.name != "skeleton_head" and track.name != "skeleton_body":
-								track.write(f, indentation + 2, 1)
-				elif self.name[-4:] == "Arms":
-					if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
-						if track.name[0:13] != "Root":
-							track.write(f, indentation + 2, 1)
-				elif self.name[-4:] == "Hand":
-					if track.name[0:13] == "skeleton_hand":
-						track.write(f, indentation + 2)
-				elif self.name[0:8] == "TurnRoot":
-					if track.name[0:13] == "Root":
-						track.write(f, indentation + 2)
-				elif self.name[-4:] == "Legs":
-					if track.name[0:12] != "skeleton_arm" and track.name[0:13] != "skeleton_hand":
-						if track.name[0:13] != "Root":
-							track.write(f, indentation + 2)
-				else:
-					if track.name[0:13] != "Root":# or self.name[-4:] == "Turn":
-						track.write(f, indentation + 2)
+				if group:
+					# Include
+					if len(group[2]):
+						doinclude = 0
+						for include in group[2]:
+							if include[-1] == "*":
+								if track.name[0: len(include)-1 ] == include[0:-1]:
+									print "Include: "+track.name
+									doinclude = 1
+									break
+							else:
+								if track.name == include:
+									print "Include: "+track.name
+									doinclude = 1
+									break
+						if doinclude == 0:
+							continue
+					# Exclude
+					for exclude in group[1]:
+						if exclude[-1] == "*":
+							if track.name[0: len(exclude)-1 ] == exclude[0:-1]:
+								print "Exclude: "+track.name
+								continue
+						else:
+							if track.name == exclude:
+								print "Exclude: "+track.name
+								continue
+				track.write(f, indentation + 2)
+#				print self.name[-4:]
+#				print track.name[0:12]
+#				if track.name[0:9] == "eye_upper":
+#					if self.name == "CloseEyes":
+#						track.write(f, indentation + 2, 1)
+#				elif self.name[0:5] == "Carry":
+#					if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
+#						if track.name[0:13] != "Root" and track.name != "skeleton_head" and track.name != "skeleton_body":
+#							track.write(f, indentation + 2, 1)
+#				elif self.name[0:9] == "CarrySpear":
+#					if track.name[-1:] == ".R":
+#						if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
+#							if track.name[0:13] != "Root" and track.name != "skeleton_head" and track.name != "skeleton_body":
+#								track.write(f, indentation + 2, 1)
+#				elif self.name[-4:] == "Arms":
+#					if track.name[0:12] != "skeleton_leg" and track.name[0:13] != "skeleton_foot" and track.name[0:13] != "skeleton_hips" and track.name != "skeleton_bodyTrans":
+#						if track.name[0:13] != "Root":
+#							track.write(f, indentation + 2, 1)
+#				elif self.name[-4:] == "Hand":
+#					if track.name[0:13] == "skeleton_hand":
+#						track.write(f, indentation + 2)
+#				elif self.name[0:8] == "TurnRoot":
+#					if track.name[0:13] == "Root":
+#						track.write(f, indentation + 2)
+#				elif self.name[-4:] == "Legs":
+#					if track.name[0:12] != "skeleton_arm" and track.name[0:13] != "skeleton_hand":
+#						if track.name[0:13] != "Root":
+#							track.write(f, indentation + 2)
+#				else:
+#					if track.name[0:13] != "Root":# or self.name[-4:] == "Turn":
+#						track.write(f, indentation + 2)
 			f.write(indent(indentation + 1) + "</tracks>\n")
 		f.write(indent(indentation) + "</animation>\n")
 		return

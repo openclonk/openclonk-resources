@@ -34,6 +34,8 @@ __docformat__ = "javadoc en"
 import sys
 
 modelsize = tuple([1.0,1.0,1.0])
+animation_export_groupList = []
+animation_export_groups = []
 
 try:
 	import Blender
@@ -1071,6 +1073,7 @@ else:
 					isValid = True
 				return isValid
 			def loadPackageSettings(self):
+				global animation_export_groups,animation_export_groupList
 				# clear old
 				for proxy in self.animationProxyDict.values():
 					proxy.invalidate()		
@@ -1082,85 +1085,127 @@ else:
 				if not animationList:
 					# load old configuration text
 					animationList = self._loadOldSettings()
-				animationList = [["Walk", "Walk", 1, 25]];
-				animationList.append(["WalkGround","",1,25]);
-				animationList.append(["TurnRoot120","",-1,-1]);
-				animationList.append(["TurnRoot180","",-1,-1]);
-				animationList.append(["TurnRoot240","",-1,-1]);
-				animationList.append(["CloseEyes","",-1,-1]);
-				animationList.append(["Stand2","Stand",1,12]);
-				animationList.append(["StandTurn","",-1,-1]);
-				animationList.append(["Run","",-1,-1]);
-				animationList.append(["RunTurn","",1,49]);
-				animationList.append(["Hangle","",1,101]);
-				animationList.append(["HangleStand","",1,61]);
-				animationList.append(["ThrowArms","",-1,-1]);
-				animationList.append(["Jump","",-1,-1]);
-				animationList.append(["Fall","",-1,-1]);
-				animationList.append(["Push","",-1,-1]);
-				animationList.append(["Swim","",-1,-1]);
-#				animationList.append(["SwimTurn","",-1,-1]);
-				animationList.append(["SwimStand","",-1,-1]);
-#				animationList.append(["SwimDive","",-1,-1]);
-				animationList.append(["SwimDiveUp","",-1,-1]);
-				animationList.append(["SwimDiveDown","",-1,-1]);
-#				animationList.append(["SwimDiveTurn","",-1,-1]);
-				animationList.append(["Scale","",-1,-1]);
-				animationList.append(["ScaleHands","",-1,-1]);
-				animationList.append(["ScaleHands2","",-1,-1]);
-				animationList.append(["ScaleTop","",-1,-1]);
-				animationList.append(["SwordSlash1.R","",-1,-1]);
-				animationList.append(["SwordSlash2.R","",-1,-1]);
-				animationList.append(["SwordJump1.R","",-1,-1]);
-				animationList.append(["SwordJump2.R","",-1,-1]);
-				animationList.append(["SwordJump3.R","",-1,-1]);
-				animationList.append(["ShieldArmsL","",-1,-1]);
-				animationList.append(["ShieldArmsR","",-1,-1]);
-				animationList.append(["BowAimArmsImproved","BowAimArms",-1,-1]);
-				animationList.append(["BowLoadArms","",-1,-1]);
-				animationList.append(["BowWalk","",-1,-1]);
-				animationList.append(["BowStand","",-1,-1]);
-				animationList.append(["BowJump","",-1,-1]);
-				animationList.append(["BowKneel","",-1,-1]);
-				animationList.append(["Dig","",-1,-1]);
-				animationList.append(["Dead","",-1,-1]);
-				animationList.append(["KneelDown","",-1,-1]);
-				animationList.append(["Tumble","",-1,-1]);
-				animationList.append(["Close1Hand","",-1,-1]);
-				animationList.append(["Close2Hand","",-1,-1]);
-				animationList.append(["BatAimArms","",-1,-1]);
-				animationList.append(["BatAim2Arms","",-1,-1]);
-				animationList.append(["BatStrikeArms","",-1,-1]);
-				animationList.append(["BatStrike2Arms","",-1,-1]);
-				animationList.append(["CarryArms","",-1,-1]);
-				animationList.append(["DoIgnite","",-1,-1]);
-				animationList.append(["PosRocket","",1,1]);
-				animationList.append(["SpearAimArms","",-1,-1]);
-				animationList.append(["SpearThrowArms","",-1,-1]);
-				animationList.append(["SpearThrow2Arms","",-1,-1]);
-				animationList.append(["SpearThrow3Arms","",-1,-1]);
-				animationList.append(["CarrySpear","",-1,-1]);
-				animationList.append(["MusketAimArms","",-1,-1]);
-				animationList.append(["MusketLoadArms","",-1,-1]);
-				animationList.append(["CarryMusket","",-1,-1]);
-				animationList.append(["IdleLookAround", "", -1, -1]);
-				animationList.append(["IdleHandwatch", "", -1, -1]);
-				animationList.append(["IdleScratch", "", -1, -1]);
-				animationList.append(["IdleStrech", "", -1, -1]);
-				animationList.append(["IdleShoe", "", -1, -1]);
-				animationList.append(["IdleShoeSole", "", -1, -1]);
-				animationList.append(["IdleHandstrech", "", -1, -1]);
-				animationList.append(["Inside", "", -1, -1]);
-				animationList.append(["StrikePickaxe", "", -1, -1]);
+				animationList = []#["Walk", "Walk", 1, 25]];
 
-				animationList.append(["CarryCrossbow","",-1,-1]);
-				animationList.append(["CrossbowAimArms","",-1,-1]);
+				actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "r");
+				name = ""
+				start = -1
+				end = -1
+				name2 = ""
+				group = ""
+				exclude = []
+				include = []
+				print "Test"
+				mode = 0
+				for line in actlist:
+					if line[0] == "#":
+						continue
+					if line == "":
+						continue
+					if mode == "Action":
+						if line[0:5] == "Name=":
+							name = line[5:-1]
+							continue
+						if line[0:11] == "ExportName=":
+							name2 = line[11:-1]
+							continue
+						if line[0:6] == "Start=":
+							start = int( line[6:-1] )
+							continue
+						if line[0:4] == "End=":
+							end = int( line[4:-1] )
+							continue
+						if line[0:6] == "Group=":
+							group = line[6:-1]
+							continue
+						if line[0] != "[":
+							print "ERROR: unreadable line "+line
+							continue
+						# finish Action
+						if name != "":
+							act = [name, name2, start, end]
+							animationList.append(act)
+							if group != "":
+								animation_export_groupList.append([name, group])
+					if mode == "Group":
+						if line[0:5] == "Name=":
+							name = line[5:-1]
+							continue
+						if line[0:8] == "Exclude=":
+							exclude.append(line[8:-1])
+							continue
+						if line[0:8] == "Include=":
+							include.append(line[8:-1])
+							continue
+						if line[0] != "[":
+							print "ERROR: unreadable line "+line
+							continue
+						# finish Action
+						if name != "":
+							act = [name, exclude, include]
+							animation_export_groups.append(act)
+					
+					if line[0:8] == "[Action]":
+						name = ""
+						name2 = ""
+						start = -1
+						end = -1
+						group = ""
+						mode = "Action"
 
-				animationList.append(["OnRope","",-1,-1]);
-				animationList.append(["RopeClimb","",-1,-1]);
-				animationList.append(["RopeDown","",-1,-1]);
-				animationList.append(["RopeSwing","",-1,-1]);
-				animationList.append(["Eat","",-1,-1]);
+					if line[0:7] == "[Group]":
+						mode = "Group"
+						name = ""
+						exclude = []
+						include = []
+
+					continue
+					if line[0:8] == "[Action]":
+						if name != "":
+							act = [name, name2, start, end]
+							animationList.append(act)
+							if group != "":
+								animation_export_groups.append([name, group])
+						name = ""
+						name2 = ""
+						start = -1
+						end = -1
+						group = ""
+						continue
+					if line[0:5] == "Name=":
+						name = line[5:-1]
+						continue
+					if line[0:11] == "ExportName=":
+						name2 = line[11:-1]
+						continue
+					if line[0:6] == "Start=":
+						start = int( line[6:-1] )
+						continue
+					if line[0:4] == "End=":
+						end = int( line[4:-1] )
+						continue
+					if line[0:6] == "Group=":
+						group = line[6:-1]
+						continue
+					print "ERROR: unreadable line "+line
+				if name != "":
+					act = [name, name2, start, end]
+					animationList.append(act)
+				actlist.close()
+				print "TestEnd"
+
+#				actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "w");
+#				for animation in animationList:
+#					actlist.write("[Action]\n")
+#					actlist.write("Name="+animation[0]+"\n")
+#					if len(animation[1]):
+#						actlist.write("ExportName="+str(animation[1])+"\n")
+#					if animation[2] != -1:
+#						actlist.write("Start="+str(animation[2])+"\n")
+#					if animation[3] != -1:
+#						actlist.write("End="+str(animation[3])+"\n")
+#					actlist.write("\n")
+#				actlist.close()
 #				animationList.append(["Empty","",1,1]);
 				if animationList and len(animationList):
 					validActionNames = [action.getName() for action in self.actionList]
