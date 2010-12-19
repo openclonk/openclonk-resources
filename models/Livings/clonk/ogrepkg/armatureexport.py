@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-1 -*-
 """Armature and armature animation export classes.
 
    @author Michael Reimpell
@@ -247,15 +248,20 @@ class ArmatureAnimation:
 						if doinclude == 0:
 							continue
 					# Exclude
+					doexclude = 0
 					for exclude in group[1]:
 						if exclude[-1] == "*":
 							if track.name[0: len(exclude)-1 ] == exclude[0:-1]:
 								print "Exclude: "+track.name
-								continue
+								doexclude = 1
+								break
 						else:
 							if track.name == exclude:
 								print "Exclude: "+track.name
-								continue
+								doexclude = 1
+								break
+					if doexclude == 1:
+						continue
 				track.write(f, indentation + 2)
 #				print self.name[-4:]
 #				print track.name[0:12]
