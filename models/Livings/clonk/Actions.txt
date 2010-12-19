@@ -85,10 +85,23 @@ Name=SwordJump2.R
 Name=SwordJump3.R
 
 [Action]
-Name=ShieldArmsL
+Name=ShieldArms.L
+Group=Arms
 
 [Action]
-Name=ShieldArmsR
+Name=ShieldArms.R
+
+[Action]
+Name=ShieldStandUp.L
+
+[Action]
+Name=ShieldStandDown.L
+
+[Action]
+Name=ShieldWalkUp.L
+
+[Action]
+Name=ShieldWalkDown.L
 
 [Action]
 Name=BowAimArmsImproved
@@ -251,7 +264,7 @@ Exclude=Root
 
 [Group]
 Name=Eyelids
-Include=eye_lid*
+Include=eye_upper
 
 [Group]
 Name=Carry
@@ -274,7 +287,7 @@ Exclude=skeleton_body
 
 [Group]
 Name=Hand
-Include=skeleton_hand*
+Include=skeleton_hand
 
 [Group]
 Name=Legs
