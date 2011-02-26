@@ -254,6 +254,10 @@ Name=RopeSwing
 [Action]
 Name=Eat
 
+[Action]
+Name=Magic
+Group=Arms
+
 [Group]
 Name=Arms
 Exclude=skeleton_leg*
