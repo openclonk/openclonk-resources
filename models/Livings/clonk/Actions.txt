@@ -17,7 +17,7 @@ Group=Eyelids
 Name=Stand2
 ExportName=Stand
 Start=1
-End=12
+End=30
 
 [Action]
 Name=Run
@@ -260,7 +260,10 @@ Name=Eat
 
 [Action]
 Name=Magic
-Group=Arms
+Group=UpperBody
+
+[Action]
+Name=MagicIdle
 
 [Group]
 Name=Arms
@@ -287,6 +290,7 @@ Exclude=skeleton_hips*
 Exclude=skeleton_bodyTrans
 Exclude=skeleton_head
 Exclude=skeleton_body
+Exclude=skeleton_body2
 
 [Group]
 Name=CarrySpear
