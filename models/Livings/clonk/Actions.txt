@@ -290,7 +290,6 @@ Exclude=skeleton_hips*
 Exclude=skeleton_bodyTrans
 Exclude=skeleton_head
 Exclude=skeleton_body
-Exclude=skeleton_body2
 
 [Group]
 Name=CarrySpear
