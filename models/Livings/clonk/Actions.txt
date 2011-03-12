@@ -240,6 +240,10 @@ Name=CrossbowAimArms
 Group=Arms
 
 [Action]
+Name=AimArmsGeneric.R
+Group=UpperBody
+
+[Action]
 Name=OnRope
 
 [Action]
@@ -265,6 +269,11 @@ Exclude=skeleton_foot*
 Exclude=skeleton_hips
 Exclude=skeleton_bodyTrans
 Exclude=Root
+
+[Group]
+Name=UpperBody
+Exclude=skeleton_leg*
+Exclude=skeleton_foot*
 
 [Group]
 Name=Eyelids
