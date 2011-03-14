@@ -128,6 +128,9 @@ Name=BowKneel
 Name=Dig
 
 [Action]
+Name=Chop.R
+
+[Action]
 Name=Dead
 
 [Action]
@@ -290,6 +293,7 @@ Exclude=skeleton_hips*
 Exclude=skeleton_bodyTrans
 Exclude=skeleton_head
 Exclude=skeleton_body
+Exclude=Root*
 
 [Group]
 Name=CarrySpear
