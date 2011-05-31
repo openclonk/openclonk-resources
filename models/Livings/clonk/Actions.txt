@@ -40,6 +40,9 @@ Group=Arms
 Name=Jump
 
 [Action]
+Name=JumpUp
+
+[Action]
 Name=Fall
 
 [Action]
@@ -135,6 +138,9 @@ Name=Dead
 
 [Action]
 Name=KneelDown
+
+[Action]
+Name=KneelRoll
 
 [Action]
 Name=Tumble
