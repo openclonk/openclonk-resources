@@ -1,5 +1,6 @@
 [Action]
 Name=Walk
+Group=NoHands
 ExportName=Walk
 Start=1
 End=25
@@ -16,11 +17,13 @@ Group=Eyelids
 [Action]
 Name=Stand2
 ExportName=Stand
+Group=NoHands
 Start=1
 End=30
 
 [Action]
 Name=Run
+Group=NoHands
 
 [Action]
 Name=Hangle
@@ -35,15 +38,18 @@ End=61
 [Action]
 Name=ThrowArms
 Group=Arms
-
+ 
 [Action]
 Name=Jump
+Group=NoHands
 
 [Action]
 Name=JumpUp
+Group=NoHands
 
 [Action]
 Name=Fall
+Group=NoHands
 
 [Action]
 Name=Push
@@ -278,6 +284,10 @@ Name=MagicIdle
 Name=JumpDive
 
 [Group]
+Name=NoHands
+Exclude=skeleton_hand*
+
+[Group]
 Name=Arms
 Exclude=skeleton_leg*
 Exclude=skeleton_foot*
@@ -292,7 +302,8 @@ Exclude=skeleton_foot*
 
 [Group]
 Name=Eyelids
-Include=eye_upper
+Include=eye_lid.R
+Include=eye_lid.L
 
 [Group]
 Name=Carry
@@ -316,7 +327,7 @@ Exclude=skeleton_body
 
 [Group]
 Name=Hand
-Include=skeleton_hand
+Include=skeleton_hand*
 
 [Group]
 Name=Legs
