@@ -262,6 +262,7 @@ class ArmatureAnimation:
 								break
 					if doexclude == 1:
 						continue
+				print "Use: "+track.name
 				track.write(f, indentation + 2)
 #				print self.name[-4:]
 #				print track.name[0:12]
