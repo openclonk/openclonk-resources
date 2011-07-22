@@ -76,7 +76,8 @@ Name=ScaleHands
 Name=ScaleHands2
 
 [Action]
-Name=ScaleTop
+Name=ScaleTop2
+ExportName=ScaleTop
 
 [Action]
 Name=SwordSlash1.R
