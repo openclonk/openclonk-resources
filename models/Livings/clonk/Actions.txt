@@ -284,6 +284,9 @@ Name=MagicIdle
 [Action]
 Name=JumpDive
 
+[Action]
+Name=CatapultSit
+
 [Group]
 Name=NoHands
 Exclude=skeleton_hand*
