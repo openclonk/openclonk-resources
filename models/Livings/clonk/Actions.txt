@@ -210,11 +210,11 @@ Group=CarrySpear
 
 [Action]
 Name=MusketAimArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=MusketLoadArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=CarryMusket
@@ -297,7 +297,7 @@ Exclude=skeleton_leg*
 Exclude=skeleton_foot*
 Exclude=skeleton_hips
 Exclude=skeleton_bodyTrans
-Exclude=Root
+Exclude=Root*
 
 [Group]
 Name=UpperBody
