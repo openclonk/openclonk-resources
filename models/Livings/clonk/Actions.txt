@@ -210,11 +210,11 @@ Group=CarrySpear
 
 [Action]
 Name=MusketAimArms
-Group=Arms
+Group=UpperBody
 
 [Action]
 Name=MusketLoadArms
-Group=Arms
+Group=UpperBody
 
 [Action]
 Name=CarryMusket
