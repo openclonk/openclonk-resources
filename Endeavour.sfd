@@ -2,60 +2,48 @@ SplineFontDB: 3.0
 FontName: Endeavour
 FullName: Endeavour
 FamilyName: Endeavour
-Weight: Thin
-Copyright: Created by Jan Lücker with PfaEdit 1.0 (http://pfaedit.sf.net)\nModified by Günther Brammer with FontForge (http://fontforge.sourceforge.net)
-Version: 000.803
+Weight: Book
+Copyright: Created by Jan Luecker with PfaEdit 1.0 (http://pfaedit.sf.net)\nModified by Guenther Brammer with FontForge (http://fontforge.sourceforge.net)
+Version: 000.805
 ItalicAngle: 0
 UnderlinePosition: -125
 UnderlineWidth: 50
 Ascent: 819
 Descent: 205
 LayerCount: 2
-Layer: 0 1 "Back" 
-Layer: 1 1 "Fore" 
+Layer: 0 1 "Back"  1
+Layer: 1 1 "Fore"  0
 XUID: [1021 719 1869416399 1319376]
-FSType: 8
-OS2Version: 1
+FSType: 0
+OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1131985304
-ModificationTime: 1226587384
+ModificationTime: 1326328484
 PfmFamily: 81
-TTFWeight: 0
+TTFWeight: 400
 TTFWidth: 5
-LineGap: 90
+LineGap: 0
 VLineGap: 0
-Panose: 0 0 0 0 0 0 0 0 0 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
 OS2TypoDOffset: 1
-OS2TypoLinegap: 0
+OS2TypoLinegap: 571
 OS2WinAscent: 0
 OS2WinAOffset: 1
-OS2WinDescent: 1
+OS2WinDescent: 0
 OS2WinDOffset: 1
 HheadAscent: 0
 HheadAOffset: 1
-HheadDescent: -1
+HheadDescent: 0
 HheadDOffset: 1
-OS2SubXSize: 524
-OS2SubYSize: 85
-OS2SubXOff: 40
-OS2SubYOff: 9564
-OS2SupXSize: -28032
-OS2SupYSize: 7
-OS2SupXOff: 27888
-OS2SupYOff: 36
-OS2StrikeYSize: 9640
-OS2StrikeYPos: -8418
 OS2Vendor: 'PfEd'
-OS2CodePages: 60000093.8dd40000
-OS2UnicodeRanges: 8000022f.0000000a.00000000.00000000
 Lookup: 4 8 0 "'frac' Diagonal Fractions in Latin lookup 0"  {"'frac' Diagonal Fractions in Latin lookup 0 subtable"  } ['frac' ('latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin lookup 1"  {"'liga' Standard Ligatures in Latin lookup 1 subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures lookup 2"  {"'liga' Standard Ligatures lookup 2 subtable"  } ['liga' ('cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
-DEI: 0
+MarkAttachClasses: 1
+DEI: 91125
 ShortTable: cvt  5
   33
   633
@@ -86,10 +74,12 @@ GaspTable: 1 65535 2
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -48
+DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 22 22 6
+WinInfo: 55 55 25
+BeginPrivate: 0
+EndPrivate
 TeXData: 1 0 0 332800 166400 110933 534528 1048576 110933 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 BeginChars: 65539 412
 
@@ -142,34 +132,39 @@ StartChar: exclam
 Encoding: 33 33 4
 Width: 362
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
 226 126 m 0,0,1
  251 113 251 113 260 82 c 0,2,3
- 263.999 68.2181 263.999 68.2181 264.024 57.9161 c 2,4,5
- 264.024 57.7734 l 2,6,7
- 264.024 33.1906 264.024 33.1906 244.969 18.9464 c 128,-1,8
- 225.915 4.70213 225.915 4.70213 205.723 4.70213 c 128,-1,9
- 185.532 4.70213 185.532 4.70213 164 15 c 0,10,11
- 121 36 121 36 120.5 70 c 128,-1,12
- 120 104 120 104 152 122 c 0,13,14
- 173.452 134.101 173.452 134.101 193.314 134.101 c 2,15,-1
- 193.69 134.1 l 2,16,17
+ 264 68 264 68 264 58 c 0,4,5
+ 264 33 264 33 245 19 c 128,-1,6
+ 226 5 226 5 206 5 c 128,-1,7
+ 186 5 186 5 164 15 c 0,8,9
+ 120 35 120 35 120 70 c 128,-1,10
+ 120 105 120 105 152 122 c 0,11,12
+ 174 134 174 134 193 134 c 2,13,-1
+ 194 134 l 2,14,15
  211 134 211 134 226 126 c 0,0,1
-144 774 m 1,18,19
- 156 804 156 804 176 814 c 0,20,21
- 187.1 820.3 187.1 820.3 198.11 820.3 c 0,22,23
- 223.8 820.3 223.8 820.3 249 786 c 1,24,25
- 257.253 724.695 257.253 724.695 257.253 653.66 c 0,26,27
- 257.253 483.684 257.253 483.684 210 258 c 1,28,29
- 200 249 200 249 193 247 c 0,30,31
- 190.103 245.759 190.103 245.759 186.822 245.759 c 0,32,33
- 174.241 245.759 174.241 245.759 156 264 c 1,34,35
- 154 286 154 286 145 399 c 0,36,37
- 136.242 506.152 136.242 506.152 136.242 602.422 c 0,38,39
- 136.242 693.03 136.242 693.03 144 774 c 1,18,19
+194 820 m 1,16,-1
+ 203 820 l 2,17,18
+ 204 820 204 820 205 820 c 128,-1,19
+ 206 820 206 820 207 820 c 0,20,21
+ 222 822 222 822 249 786 c 1,22,23
+ 257 725 257 725 257 688 c 2,24,-1
+ 257 634 l 2,25,26
+ 257 631 257 631 257 628 c 128,-1,27
+ 257 625 257 625 257 622 c 0,28,29
+ 258 486 258 486 210 258 c 1,30,31
+ 199 248 199 248 194.5 247 c 128,-1,32
+ 190 246 190 246 182 246 c 128,-1,33
+ 174 246 174 246 156 264 c 1,34,35
+ 154 286 154 286 145 396 c 128,-1,36
+ 136 506 136 506 136 599.5 c 128,-1,37
+ 136 693 136 693 144 774 c 1,38,39
+ 156 802 156 802 172 810 c 128,-1,40
+ 188 818 188 818 194 820 c 1,16,-1
 EndSplineSet
 Validated: 33
 EndChar
@@ -2367,7 +2362,7 @@ StartChar: Z
 Encoding: 90 90 61
 Width: 703
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
@@ -2990,7 +2985,7 @@ SplineSet
  128.5 522.5 128.5 522.5 159.5 522.5 c 128,-1,22
  190.5 522.5 190.5 522.5 212 510 c 1,23,24
  207 499 207 499 192 310 c 0,25,26
- 188.08 260.44 188.08 260.44 188.08 217.701 c 0,27,28
+ 188.08 260.44 188.08 260.44 188.08 217.701 c 4,27,28
  188.08 107.8 188.08 107.8 214 43 c 0,29,30
  224 15 224 15 242 0 c 1,31,-1
  64 6 l 1,32,-1
@@ -3000,7 +2995,7 @@ SplineSet
  88 495 l 2,38,39
  88 503 88 503 88 510 c 1,20,21
 EndSplineSet
-Validated: 9
+Validated: 524297
 EndChar
 
 StartChar: j
@@ -3104,32 +3099,38 @@ StartChar: l
 Encoding: 108 108 79
 Width: 362
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-102 804 m 1,0,1
- 140.121 821.515 140.121 821.515 168.158 821.515 c 0,2,3
- 194.545 821.515 194.545 821.515 212 806 c 1,4,5
- 212.667 758.333 212.667 758.333 212.667 711.333 c 0,6,7
- 212.667 476.333 212.667 476.333 196 258 c 0,8,9
- 192.444 207.333 192.444 207.333 192.444 176.815 c 0,10,11
- 192.444 138.667 192.444 138.667 198 132 c 0,12,13
- 201.5 128.5 201.5 128.5 206.75 128.5 c 0,14,15
- 222.5 128.5 222.5 128.5 254 160 c 0,16,17
- 256 162 256 162 260 164 c 0,18,19
- 281.13 171.043 281.13 171.043 293.992 171.043 c 0,20,21
- 314 171.043 314 171.043 314 154 c 0,22,23
- 314.182 151.455 314.182 151.455 314.182 148.859 c 0,24,25
- 314.182 122.909 314.182 122.909 296 92 c 0,26,27
- 258 14 258 14 158 -8 c 0,28,29
- 151.714 -9.14286 151.714 -9.14286 146 -9.14286 c 0,30,31
- 111.714 -9.14286 111.714 -9.14286 98 32 c 0,32,33
- 85.5385 79.0769 85.5385 79.0769 85.5385 228.722 c 0,34,35
- 85.5385 295.231 85.5385 295.231 88 382 c 2,36,-1
- 102 804 l 1,0,1
+54 810.281 m 1,0,1
+ 75 825.826 75 825.826 117 825.826 c 128,-1,2
+ 159 825.826 159 825.826 212 806 c 1,3,4
+ 209 792 209 792 209 765.5 c 128,-1,5
+ 209 739 209 739 216.5 684.5 c 128,-1,6
+ 224 630 224 630 224 570 c 128,-1,7
+ 224 510 224 510 206.5 417.5 c 128,-1,8
+ 189 325 189 325 189 266 c 128,-1,9
+ 189 207 189 207 192.5 171.5 c 128,-1,10
+ 196 136 196 136 198 132 c 128,-1,11
+ 200 128 200 128 212 129 c 128,-1,12
+ 224 130 224 130 254 160 c 0,13,14
+ 257 163 257 163 269 167 c 128,-1,15
+ 281 171 281 171 294 171 c 0,16,17
+ 314 171 314 171 314 154 c 2,18,-1
+ 314 149 l 1,19,20
+ 315 141 315 141 315 121.5 c 128,-1,21
+ 315 102 315 102 303 72 c 0,22,23
+ 278 9 278 9 158 -8 c 0,24,25
+ 144 -10 144 -10 134.5 -10 c 128,-1,26
+ 125 -10 125 -10 123 -7 c 0,27,28
+ 100 30 100 30 98 32 c 0,29,30
+ 66 64 66 64 66 193 c 0,31,32
+ 66 253 66 253 76 366 c 128,-1,33
+ 86 479 86 479 98 623 c 17,34,35
+ 91 781.281 91 781.281 54 810.281 c 1,0,1
 EndSplineSet
-Validated: 1
+Validated: 524289
 EndChar
 
 StartChar: m
@@ -3355,7 +3356,7 @@ StartChar: r
 Encoding: 114 114 85
 Width: 475
 GlyphClass: 2
-Flags: MWO
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
@@ -6335,7 +6336,6 @@ SplineSet
  67.1951 423.805 67.1951 423.805 83 444 c 2,60,-1
  93 456 l 1,33,34
 93 456 m 1,61,-1
- 93 456 l 1,62,-1
  93 456 l 1,61,-1
 EndSplineSet
 Validated: 33
@@ -7189,7 +7189,7 @@ StartChar: lacute
 Encoding: 314 314 246
 Width: 362
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 117 180 N 1 0 0 1 90 304 2
@@ -7213,7 +7213,7 @@ StartChar: lcommaaccent
 Encoding: 316 316 248
 Width: 362
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 15 44 N 1 0 0 1 26 -209 2
@@ -7237,7 +7237,7 @@ StartChar: lcaron
 Encoding: 318 318 250
 Width: 615
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 15 44 N 1 0 0 1 227 683 2
@@ -7263,7 +7263,7 @@ StartChar: ldot
 Encoding: 320 320 252
 Width: 703
 GlyphClass: 3
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 120 183 N 1 0 0 1 357 0 2
