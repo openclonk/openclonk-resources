@@ -1,11 +1,7 @@
 [Action]
 Name=Walk
+Group=NoHands
 ExportName=Walk
-Start=1
-End=25
-
-[Action]
-Name=WalkGround
 Start=1
 End=25
 
@@ -15,12 +11,14 @@ Group=Eyelids
 
 [Action]
 Name=Stand2
+Group=NoHands
 ExportName=Stand
 Start=1
 End=30
 
 [Action]
 Name=Run
+Group=NoHands
 
 [Action]
 Name=Hangle
@@ -37,13 +35,24 @@ Name=ThrowArms
 Group=Arms
 
 [Action]
-Name=Jump
+Name=Jump.L
+Group=NoHands
 
 [Action]
-Name=JumpUp
+Name=JumpUp.L
+Group=NoHands
 
 [Action]
-Name=Fall
+Name=JumpWall.R
+Group=NoHands
+
+[Action]
+Name=FallShort
+Group=NoHands
+
+[Action]
+Name=FallLong
+Group=NoHands
 
 [Action]
 Name=Push
@@ -70,7 +79,8 @@ Name=ScaleHands
 Name=ScaleHands2
 
 [Action]
-Name=ScaleTop
+Name=ScaleTop2
+ExportName=ScaleTop
 
 [Action]
 Name=SwordSlash1.R
@@ -90,9 +100,6 @@ Name=SwordJump3.R
 [Action]
 Name=ShieldArms.L
 Group=Arms
-
-[Action]
-Name=ShieldArms.R
 
 [Action]
 Name=ShieldStandUp.L
@@ -203,11 +210,11 @@ Group=CarrySpear
 
 [Action]
 Name=MusketAimArms
-Group=Arms
+Group=UpperBody
 
 [Action]
 Name=MusketLoadArms
-Group=Arms
+Group=UpperBody
 
 [Action]
 Name=CarryMusket
@@ -277,13 +284,20 @@ Name=MagicIdle
 [Action]
 Name=JumpDive
 
+[Action]
+Name=CatapultSit
+
+[Group]
+Name=NoHands
+Exclude=skeleton_hand*
+
 [Group]
 Name=Arms
 Exclude=skeleton_leg*
 Exclude=skeleton_foot*
 Exclude=skeleton_hips
 Exclude=skeleton_bodyTrans
-Exclude=Root
+Exclude=Root*
 
 [Group]
 Name=UpperBody
@@ -292,7 +306,8 @@ Exclude=skeleton_foot*
 
 [Group]
 Name=Eyelids
-Include=eye_upper
+Include=eye_lid.R
+Include=eye_lid.L
 
 [Group]
 Name=Carry
@@ -316,7 +331,7 @@ Exclude=skeleton_body
 
 [Group]
 Name=Hand
-Include=skeleton_hand
+Include=skeleton_hand*
 
 [Group]
 Name=Legs

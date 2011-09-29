@@ -1119,14 +1119,19 @@ else:
 							group = line[6:-1]
 							continue
 						if line[0] != "[":
-							print "ERROR: unreadable line "+line
+							if line != "\n":
+								print "ERROR: unreadable line "+line
 							continue
 						# finish Action
 						if name != "":
 							act = [name, name2, start, end]
 							animationList.append(act)
 							if group != "":
-								animation_export_groupList.append([name, group])
+								namegroup = name
+								if name2 != "":
+									namegroup = name2
+								animation_export_groupList.append([namegroup, group])
+							print name+": "+name2+" "+group
 					if mode == "Group":
 						if line[0:5] == "Name=":
 							name = line[5:-1]
@@ -1138,7 +1143,8 @@ else:
 							include.append(line[8:-1])
 							continue
 						if line[0] != "[":
-							print "ERROR: unreadable line "+line
+							if line != "\n":
+								print "ERROR: unreadable line "+line
 							continue
 						# finish Action
 						if name != "":
