@@ -210,11 +210,11 @@ Group=CarrySpear
 
 [Action]
 Name=MusketAimArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=MusketLoadArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=CarryMusket
@@ -243,6 +243,9 @@ Name=IdleHandstrech
 
 [Action]
 Name=Inside
+
+[Action]
+Name=Drive
 
 [Action]
 Name=StrikePickaxe
