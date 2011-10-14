@@ -161,19 +161,19 @@ Name=Close2Hand
 Group=Hand
 
 [Action]
-Name=BatAimArms
+Name=BatAimArms.R
 Group=Arms
 
 [Action]
-Name=BatAim2Arms
+Name=BatAim2Arms.R
 Group=Arms
 
 [Action]
-Name=BatStrikeArms
+Name=BatStrikeArms.R
 Group=Arms
 
 [Action]
-Name=BatStrike2Arms
+Name=BatStrike2Arms.R
 Group=Arms
 
 [Action]
