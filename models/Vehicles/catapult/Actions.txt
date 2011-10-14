@@ -17,19 +17,9 @@ Group=Chassis
 Name=TurnRight
 Group=Chassis
 
-[Action]
-Name=Spinwheel
-Group=Controls
-
-[Action]
-Name=Launch
-Group=Controls
-
 [Group]
 Name=Arm
 Exclude=wheel_*
-Exclude=catch
-Exclude=spin_wheel
 Exclude=main
 
 [Group]
@@ -37,12 +27,6 @@ Name=Wheels
 Exclude=arm
 Exclude=catch
 Exclude=spin_wheel
-Exclude=main
-
-[Group]
-Name=Controls
-Exclude=wheel_*
-Exclude=arm
 Exclude=main
 
 [Group]
