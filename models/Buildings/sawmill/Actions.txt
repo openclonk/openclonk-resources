@@ -1,17 +1,2 @@
 [Action]
 Name=work
-Group=axle
-
-[Action]
-Name=blade_graphic
-Group=blades
-
-[Group]
-Name=axle
-Exclude=Blade*
-
-[Group]
-Name=blades
-Exclude=main
-Exclude=axle
-Exclude=wheel2
