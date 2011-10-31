@@ -290,6 +290,12 @@ Name=JumpDive
 [Action]
 Name=CatapultSit
 
+[Action]
+Name=CarryArmsPickup
+
+[Action]
+Name=CarryArmsSetdown
+
 [Group]
 Name=NoHands
 Exclude=skeleton_hand*
