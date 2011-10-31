@@ -1,4 +1,4 @@
-material DeliveryCrate
+material Crate
 {
 	receive_shadows on
 	technique
