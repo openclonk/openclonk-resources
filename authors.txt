@@ -15,9 +15,16 @@ Buildings
 -------------------------------------------------------------------------------
 chest				-	Ringwaul
 elevator			-	Mimmo, Newton
+flag*				-	Ringwaul
 foundry				-	Faby, Newton
+lift_tower			-	Faby, Ringwaul
+lookout				-	Ringwaul
+pumpjack			-	Matthi
+sawmill				-	Ringwaul
 steam_power			-	Nachtfalter, Newton
+tunnel_support		-	Ringwaul
 wind_generator		-	Mimmo, Newton
+windmill			-	Ringwaul
 wooden_cabin		-	Faby, Ringwaul
 workshop			-	Ringwaul, Newton
 
@@ -26,17 +33,22 @@ Decoration
 grass				-	Ringwaul
 mushroom			-	Ringwaul
 seaweed				-	Ringwaul
+sign				-	Ringwaul
+strawman			-	Ringwaul
 target				-	Ringwaul
 tree				-	Ringwaul
+wheat				-	Ringwaul
+
 
 Icons
 -------------------------------------------------------------------------------
+backpack			-	Ringwaul
 controllers (all)	-	Ringwaul
 HUD					-	Ringwaul
-backpack			-	Ringwaul
 
 Items
 -------------------------------------------------------------------------------
+axe					-	Ringwaul
 barrel/powderkeg	-	Ringwaul
 boompack			-	Ringwaul
 bow					-	Ringwaul
@@ -46,6 +58,7 @@ diving_helmet		-	Ringwaul
 dynamite			-	AlteredARMOR
 grappler			-	AlteredARMOR
 great_hammer		-	Ringwaul
+hammer				-	Randrian
 javelin				-	Ringwaul
 levitation_orb		-	Ringwaul
 metal				-	AlteredARMOR
@@ -58,13 +71,19 @@ rope_ladder         -   AlteredARMOR
 shield				-	Ringwaul
 shovel				-	Ringwaul
 swords				-	Ringwaul
+telekinesis			-	Ringwaul
 wire_roll           -   AlteredARMOR
 
 Livings
 -------------------------------------------------------------------------------
+armadillo			-	Ringwaul
+butterfly			-	Randrian, Ringwaul
 clonk				-	Randrian
 crazyclonk			-	Pluto, Newton
-female clonk		-	Ringwaul
+steampunkClonk		-	Ringwaul
+alchemistClonk		-	Ringwaul
+farmerClonk			-	Ringwaul
+fish				-	Ringwaul
 dragon				-	Ringwaul
 shark				-	Ringwaul
 wipf				-	Ringwaul
