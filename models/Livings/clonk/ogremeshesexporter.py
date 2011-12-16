@@ -1085,24 +1085,95 @@ else:
 				if not animationList:
 					# load old configuration text
 					animationList = self._loadOldSettings()
-				animationList = []#["Walk", "Walk", 1, 25]];
+				filename = os.path.dirname(Blender.Get('filename'))+"/Actions.txt"
+				if os.path.isfile(filename):
+					animationList = []#["Walk", "Walk", 1, 25]];
 
-				actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "r");
-				name = ""
-				start = -1
-				end = -1
-				name2 = ""
-				group = ""
-				exclude = []
-				include = []
-				print "Test"
-				mode = 0
-				for line in actlist:
-					if line[0] == "#":
+					actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "r");
+					name = ""
+					start = -1
+					end = -1
+					name2 = ""
+					group = ""
+					exclude = []
+					include = []
+					print "Test"
+					mode = 0
+					for line in actlist:
+						if line[0] == "#":
+							continue
+						if line == "":
+							continue
+						if mode == "Action":
+							if line[0:5] == "Name=":
+								name = line[5:-1]
+								continue
+							if line[0:11] == "ExportName=":
+								name2 = line[11:-1]
+								continue
+							if line[0:6] == "Start=":
+								start = int( line[6:-1] )
+								continue
+							if line[0:4] == "End=":
+								end = int( line[4:-1] )
+								continue
+							if line[0:6] == "Group=":
+								group = line[6:-1]
+								continue
+							if line[0] != "[":
+								print "ERROR: unreadable line "+line
+								continue
+							# finish Action
+							if name != "":
+								act = [name, name2, start, end]
+								animationList.append(act)
+								if group != "":
+									animation_export_groupList.append([name, group])
+						if mode == "Group":
+							if line[0:5] == "Name=":
+								name = line[5:-1]
+								continue
+							if line[0:8] == "Exclude=":
+								exclude.append(line[8:-1])
+								continue
+							if line[0:8] == "Include=":
+								include.append(line[8:-1])
+								continue
+							if line[0] != "[":
+								print "ERROR: unreadable line "+line
+								continue
+							# finish Action
+							if name != "":
+								act = [name, exclude, include]
+								animation_export_groups.append(act)
+						
+						if line[0:8] == "[Action]":
+							name = ""
+							name2 = ""
+							start = -1
+							end = -1
+							group = ""
+							mode = "Action"
+
+						if line[0:7] == "[Group]":
+							mode = "Group"
+							name = ""
+							exclude = []
+							include = []
+
 						continue
-					if line == "":
-						continue
-					if mode == "Action":
+						if line[0:8] == "[Action]":
+							if name != "":
+								act = [name, name2, start, end]
+								animationList.append(act)
+								if group != "":
+									animation_export_groups.append([name, group])
+							name = ""
+							name2 = ""
+							start = -1
+							end = -1
+							group = ""
+							continue
 						if line[0:5] == "Name=":
 							name = line[5:-1]
 							continue
@@ -1118,101 +1189,26 @@ else:
 						if line[0:6] == "Group=":
 							group = line[6:-1]
 							continue
-						if line[0] != "[":
-							if line != "\n":
-								print "ERROR: unreadable line "+line
-							continue
-						# finish Action
-						if name != "":
-							act = [name, name2, start, end]
-							animationList.append(act)
-							if group != "":
-								namegroup = name
-								if name2 != "":
-									namegroup = name2
-								animation_export_groupList.append([namegroup, group])
-							print name+": "+name2+" "+group
-					if mode == "Group":
-						if line[0:5] == "Name=":
-							name = line[5:-1]
-							continue
-						if line[0:8] == "Exclude=":
-							exclude.append(line[8:-1])
-							continue
-						if line[0:8] == "Include=":
-							include.append(line[8:-1])
-							continue
-						if line[0] != "[":
-							if line != "\n":
-								print "ERROR: unreadable line "+line
-							continue
-						# finish Action
-						if name != "":
-							act = [name, exclude, include]
-							animation_export_groups.append(act)
-					
-					if line[0:8] == "[Action]":
-						name = ""
-						name2 = ""
-						start = -1
-						end = -1
-						group = ""
-						mode = "Action"
+						print "ERROR: unreadable line "+line
+					if name != "":
+						act = [name, name2, start, end]
+						animationList.append(act)
+					actlist.close()
+					print "TestEnd"
 
-					if line[0:7] == "[Group]":
-						mode = "Group"
-						name = ""
-						exclude = []
-						include = []
-
-					continue
-					if line[0:8] == "[Action]":
-						if name != "":
-							act = [name, name2, start, end]
-							animationList.append(act)
-							if group != "":
-								animation_export_groups.append([name, group])
-						name = ""
-						name2 = ""
-						start = -1
-						end = -1
-						group = ""
-						continue
-					if line[0:5] == "Name=":
-						name = line[5:-1]
-						continue
-					if line[0:11] == "ExportName=":
-						name2 = line[11:-1]
-						continue
-					if line[0:6] == "Start=":
-						start = int( line[6:-1] )
-						continue
-					if line[0:4] == "End=":
-						end = int( line[4:-1] )
-						continue
-					if line[0:6] == "Group=":
-						group = line[6:-1]
-						continue
-					print "ERROR: unreadable line "+line
-				if name != "":
-					act = [name, name2, start, end]
-					animationList.append(act)
-				actlist.close()
-				print "TestEnd"
-
-#				actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "w");
-#				for animation in animationList:
-#					actlist.write("[Action]\n")
-#					actlist.write("Name="+animation[0]+"\n")
-#					if len(animation[1]):
-#						actlist.write("ExportName="+str(animation[1])+"\n")
-#					if animation[2] != -1:
-#						actlist.write("Start="+str(animation[2])+"\n")
-#					if animation[3] != -1:
-#						actlist.write("End="+str(animation[3])+"\n")
-#					actlist.write("\n")
-#				actlist.close()
-#				animationList.append(["Empty","",1,1]);
+	#				actlist = open(os.path.dirname(Blender.Get('filename'))+"/Actions.txt", "w");
+	#				for animation in animationList:
+	#					actlist.write("[Action]\n")
+	#					actlist.write("Name="+animation[0]+"\n")
+	#					if len(animation[1]):
+	#						actlist.write("ExportName="+str(animation[1])+"\n")
+	#					if animation[2] != -1:
+	#						actlist.write("Start="+str(animation[2])+"\n")
+	#					if animation[3] != -1:
+	#						actlist.write("End="+str(animation[3])+"\n")
+	#					actlist.write("\n")
+	#				actlist.close()
+	#				animationList.append(["Empty","",1,1]);
 				if animationList and len(animationList):
 					validActionNames = [action.getName() for action in self.actionList]
 					for animation in animationList:

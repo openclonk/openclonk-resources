@@ -161,19 +161,19 @@ Name=Close2Hand
 Group=Hand
 
 [Action]
-Name=BatAimArms
+Name=BatAimArms.R
 Group=Arms
 
 [Action]
-Name=BatAim2Arms
+Name=BatAim2Arms.R
 Group=Arms
 
 [Action]
-Name=BatStrikeArms
+Name=BatStrikeArms.R
 Group=Arms
 
 [Action]
-Name=BatStrike2Arms
+Name=BatStrike2Arms.R
 Group=Arms
 
 [Action]
@@ -210,11 +210,11 @@ Group=CarrySpear
 
 [Action]
 Name=MusketAimArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=MusketLoadArms
-Group=UpperBody
+Group=Arms
 
 [Action]
 Name=CarryMusket
@@ -243,6 +243,9 @@ Name=IdleHandstrech
 
 [Action]
 Name=Inside
+
+[Action]
+Name=Drive
 
 [Action]
 Name=StrikePickaxe
@@ -286,6 +289,12 @@ Name=JumpDive
 
 [Action]
 Name=CatapultSit
+
+[Action]
+Name=CarryArmsPickup
+
+[Action]
+Name=CarryArmsSetdown
 
 [Group]
 Name=NoHands
