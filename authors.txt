@@ -15,6 +15,7 @@ Buildings
 -------------------------------------------------------------------------------
 chest				-	Ringwaul
 elevator			-	Mimmo, Newton
+elevator2			-	Mimmo, Newton
 flag*				-	Ringwaul
 foundry				-	Faby, Newton
 lift_tower			-	Faby, Ringwaul
