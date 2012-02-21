@@ -34,6 +34,7 @@ workshop			-	Ringwaul, Newton
 Decoration
 -------------------------------------------------------------------------------
 grass				-	Ringwaul
+moon				-	Nachtfalter
 mushroom			-	Ringwaul
 seaweed				-	Ringwaul
 sign				-	Ringwaul
