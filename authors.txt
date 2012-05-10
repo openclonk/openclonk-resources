@@ -5,8 +5,8 @@ graphics
 ===============================================================================
 (all others)		-	Newton
 GUI icons			-	Ringwaul
-OpenClonkLogo		-	Spell
-OC icon				-	Spell
+OpenClonkLogo		-	MrBeast
+OC icon				-	MrBeast
 
 models
 ===============================================================================
@@ -91,7 +91,7 @@ fish				-	Ringwaul
 dragon				-	Ringwaul
 shark				-	Ringwaul
 wipf				-	Ringwaul
-wolf				-	Mimmo, Spell, Newton, Ringwaul
+wolf				-	Mimmo, MrBeast, Newton, Ringwaul
 
 Vehicles
 -------------------------------------------------------------------------------
