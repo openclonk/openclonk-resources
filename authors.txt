@@ -7,6 +7,7 @@ graphics
 GUI icons			-	Ringwaul
 OpenClonkLogo		-	MrBeast
 OC icon				-	MrBeast
+bulb icon			-   The people from the Tango! project
 
 models
 ===============================================================================
