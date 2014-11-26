@@ -24,7 +24,7 @@
 from scipy import misc
 import sys
 
-radius = 20 # TODO: This should be configurable
+radius = 16 # TODO: This should be configurable
 infile = sys.argv[1]
 outfile = sys.argv[2]
 
@@ -36,7 +36,7 @@ def get_normal(image, r, x, y):
 	subimg = image[max(y-r, 0):y+r+1,max(x-r,0):x+r+1]
 	x0, y0 = x - max(x-r,0) + 0.5, y - max(y-r,0) + 0.5
 
-	xalpha = yalpha = totalpha = 0.
+	xalpha = yalpha = 0.
 	for iy in range(subimg.shape[0]):
 		for ix in range(subimg.shape[1]):
 			length = ( (ix - x0)**2 + (iy - y0)**2)**0.5
@@ -48,18 +48,38 @@ def get_normal(image, r, x, y):
 
 			xalpha += alpha * xv
 			yalpha += alpha * yv
-			totalpha += alpha
 
 	length = (xalpha**2 + yalpha**2)**0.5
 	if length == 0:
 		return 0., 0., 1.
 
-	if totalpha > length: # might not always be true because of rounding errors
-		zlength = (totalpha**2 - length**2)**0.5
-	else:
-		zlength = 0.
+	# get Z component in a second pass by weighting each pixel
+	# by its projection onto the normal vector direction (refx/refy)
+	refx, refy = xalpha / length, yalpha / length
+	signw = totw = 0.
+	for iy in range(subimg.shape[0]):
+		for ix in range(subimg.shape[1]):
+			length = ( (ix - x0)**2 + (iy - y0)**2)**0.5
+			if length > r or length == 0:
+				continue
 
-	return -xalpha / totalpha, -yalpha / totalpha, zlength / totalpha
+			alpha = subimg[iy,ix,3] / 255.
+			xv, yv = (ix - x0) / length, (iy - y0) / length
+
+			w = xv * refx + yv * refy
+			signw += alpha * w		
+			totw += alpha * abs(w)		
+
+	# Must be > 0 by definition of the reference vector
+	assert(signw >= -1e-3)
+
+	# Keep Z component at least at 0.2, to prevent super-sharp edges
+	zf = 0.2 + 0.8 * (1.0 - (max(signw, 0.) / totw))
+	l = (1 - zf**2)**0.5
+
+	xn, yn, zn = -refx * l, -refy * l, zf
+	assert( abs((xn**2 + yn**2 + zn**2) - 1.) <= 1e-3)
+	return xn, yn, zn
 
 newimg = img.copy()
 for y in range(img.shape[0]):
