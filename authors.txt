@@ -50,6 +50,9 @@ Icons
 backpack			-	Ringwaul
 controllers (all)	-	Ringwaul
 HUD					-	Ringwaul
+numbers_old         -   Ringwaul
+Numbers             -   Foaly (licensed CC0)
+arrow               -   Ringwaul, Zapper
 
 Items
 -------------------------------------------------------------------------------
