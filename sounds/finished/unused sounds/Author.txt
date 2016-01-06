@@ -1,0 +1,63 @@
+If not stated otherwise, the sound effects are licensed under the
+CC Attribution 3.0 license (http://creativecommons.org/licenses/by/3.0/)
+
+Author        Work(s)
+===============================================================================
+				  
+ala				- 
+				  Animal:
+				  Zap/Zap1-5 ; PigGrunt1-4 ; Wipf/Weep3-8 ; Mooq: Snort1-3, Snorting1-2, Die1-5, DieFat, Spit1-2, Hurt1-2, Munch1-4 ; 
+				  Monster/Growl4-6 ; Bat: Bat1-4, Wing1-4 ; Chippie: Crunch1-9, CrunchLong1-4
+
+				  Other:
+				  UI/Error, UI/Cancel, Magic/MagicWind1-2, Objects: BucketHit1-2, BucketPut
+				  
+				  Liquids:
+				  BubblesLoop, Bubble1-3, Waterdrop1-2, 
+				  
+				  Clonk:
+				  Burp1-2, Cough, Whistle1-5, Whistling1-2 Movement/LeaveStep, Movement/LeaveStepSnow ; 
+
+				  Alchemist-Skin:
+				  Reluctant1-4, Outburst
+				  German: Confirm1-2, Decline1-3, Doubt1-2, Reluctant1-2, EvilConfirm1-3
+				  
+				  SteamGirl-Skin:
+				  Laughter4-6, Reluctant1-3, Singing3-4
+				  German: Shock, Reluctant1-3, Doubt1-3, Decline1-3, Confirm1-2
+				  
+				  Adventurer-Skin:			  
+				  Scream, Reluctant1-4, Outburst1-2, Hurt9, Decline4-6, ComicalPain1-3, ComicalDecline1-3
+				  German: Confirm1-2, Reluctant1-2
+				  
+				  --- modified
+				  PetrifyShort1-3, PetrifyLong1-3 (made from: https://www.freesound.org/people/ecfike/sounds/177217/ CC 0 - by ecfike)
+				  
+K-Pone			- Fire & Explosion: Blast4, BlastLiquid4 ; Clonk/EvilLaugh, Materials/GlassHit3-4
+K-Pone & ala	- Fire & Explosion: Blast4Noise1-4
+
+D W				- RainStereo (modified) (http://www.freesound.org/people/D%20W/sounds/136971/)
+alinmear		- CicadasLoopStereo (modified) (http://www.freesound.org/people/alinmear/sounds/217253/)
+klankbeeld		- SeaWavesStereo (modified) (http://www.freesound.org/people/klankbeeld/sounds/187367/)
+				- WolfAmbientStereo1-6 (http://www.freesound.org/people/klankbeeld/sounds/133763/)
+				- BirdAmbient (modified)
+simcotter		- WolfAmbientStereo1-6 (http://www.freesound.org/people/simcotter/sounds/115357/)			
+MirandaHuang	- Waterdrop3-7 (modified) (http://www.freesound.org/people/MirandaHuang/sounds/221078/)
+
+===============================================================================
+
+The following sound effects are licensed under Creative Commons Attribution-ShareAlike 4.0
+
+Niels Krabbe 	- Animal/HumBirdCall1 (modified, www.xeno-canto.org/250456 - XC250456)
+Niels Krabbe 	- Animal/HumBirdCall2 (modified, www.xeno-canto.org/250456 - XC250456)
+
+
+===============================================================================
+
+The following sound effects are licensed under the CC 0 license (public domain):
+
+===============================================================================
+
+Sounds with unknown source:
+-TreeCrack, TreeLanding, BoomPackLaunch
+planet/Sound.ocg/UI.ocg/Tick.ogg
