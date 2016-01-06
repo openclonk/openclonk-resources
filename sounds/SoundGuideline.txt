@@ -1,0 +1,12 @@
+Hi,
+
+If you add new sounds to the soundpack please add the source and license even if it is CC-0 so that the maintainers may reproduce the sounds origin when in doubt. 
+
+----------
+
+Non obligatory sound guildine:
+-currently most sounds are mono because they tend to have a clearer location. Stereo can on the other hand be used for ambience recordings (birds, water, rain etc.)
+-Use lossless or uncompressed format for short sounds, only if the sound is really long use .ogg. No need to compress quality just for the gain of a couple of megabytes.
+-Clonk can't handle 24bit wavs, use 16bit instead.
+-Loops: Sounds that are ment for looping should be named accordingly.
+-Not too much reverb (dry sound) - since the game will calculate reverb on top of the sound file if it is located in a cave.

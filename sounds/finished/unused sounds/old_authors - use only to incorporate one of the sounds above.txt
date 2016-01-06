@@ -1,0 +1,150 @@
+If not stated otherwise, the sound effects are licensed under the
+CC Attribution 3.0 license (http://creativecommons.org/licenses/by/3.0/)
+
+Author        Work(s)
+===============================================================================
+
+Ringwaul        - Monster/Growl1-3, Monster/Die, Wipf/Snuff1-2, Wipf/Aroof, Wipf/Whine, Chest/Open, Chest/Close
+                  Winbag/Charge, Winbag/ChargeStop, Winbag/Gust, Pickaxe/Clang1-3
+
+Checkmaty       - ProjectileHitLiving*, Arrow/HitGround, Arrow/Shoot1/3, Bow/Draw, Bow/GetArrow1-2, Bow/Load1-2, Bow/PutAwayBow, Shoot1-3,
+				  Javelin/Draw, Javelin/HitGround, Javelin/Throw1-3, WeaponHit1-3, WeaponSwing1-3, Shield/WeaponHitShield, Shield/MetalHit1-4,
+				  Shield/WoodHit1-3, Musket/GunShot1-5, Musket/BulletShot1-2, Musket/BulletHitGround1-3
+				  
+ala				- Rockfall1-2, Smoke, Spark1-3, GlassBreak, Bubble1-3, Waterdrop1-2, MagicWind1-2, NoAmmunition1-3, Alarm, Cancel,
+				  OrganicHit1-2, BubblesLoop, Clonk(16): Munch2, LeaveStep, LeaveStepSnow, DivingLoop1-3, Burp1-2, Cough, Whistle1-5,
+				  Whistling1-2, Bat(15): Bat1-4, Chirp, Flutter1-3, Noises1-3, Wing1-4 Chippie(20): Chirp1-3, Chat1-2, Crunch1-9, CrunchLong1-4,
+				  Bite1-2, Monster (3): Growl4-6, Mooq(19):  Snort1-3, Snorting1-2, Die1-5, DieFat, Spit1-2, Hurt1-2, Munch1-4,
+				  Puka(7): Hiss1-2, Hurt1-4, Gulp, Zap(5): Zap1-5, Wipf(9): Snuff3, Weep1-8, PigGrunt1-4
+				  
+				  Alchemist-Skin: (53)	
+				  Confirm1-6, Die1-3, Hurt1-6, Decline1-7,  Doubt1-5, Reluctant1-6, Scream1-2, Outburst
+				  Extra: EvilConfirm1-3
+				  
+				  SteamGirl-Skin: (50)
+				  Confirm1-6, Die1-3, Hurt1-6, Decline1-6, Doubt1-8, Reluctant1-6, Scream
+				  Extra: Shock1-4, Singing1-4, Laughter1-6
+				  
+				  Adventurer-Skin: (39)				  
+				  AlchConfirm1-6, AlchDie1-3, Hurt1-9, Decline1-6, Doubt1-5, Reluctant1-6, Scream, Outburst1-2
+				  Extra: Chuckle1-3, Shock1-6, ComicalPain1-3, ComicalDecline1-3
+				  
+				  --- modified
+				  PetrifyShort1-3, PetrifyLong1-3 (made from: https://www.freesound.org/people/ecfike/sounds/177217/ CC 0 - by ecfike)
+				  
+				  Repair / FinishBuilding - made from following sources:
+				  JoelAudio: https://www.freesound.org/people/JoelAudio/sounds/135860/ - CC-By 3.0.
+				  cmusounddesign: https://www.freesound.org/people/cmusounddesign/sounds/84696 - CC-By 3.0.
+				  
+Clonkonaut      - Clonk/Verbal/Confirm*, Clonk/Verbal/FDie
+K-Pone			- Blast4, BlastLiquid4, SwordHit1
+K-Pone & ala	- Blast4Noise1-4
+dobroide        - BirdsLoop (http://www.freesound.org/people/dobroide/sounds/54746/)
+Benboncan       - Blast*, BlastMetal (http://www.freesound.org/people/Benboncan/sounds/73005/)
+Stickinthemud   - Clonk (http://www.freesound.org/people/Stickinthemud/sounds/27526/)
+                  BlastMetal (http://www.freesound.org/people/Stickinthemud/sounds/27531/)
+Toby Knowles    - Fanfare (http://www.freesound.org/people/tobyk/sounds/26198/)
+ERH             - WindLoop (http://www.freesound.org/people/ERH/sounds/34338/)
+TicTacShutUp    - Click (http://www.freesound.org/people/TicTacShutUp/sounds/406/)
+				- UI/Confirmed (modified)
+CGEffex         - Splash1-3 (http://www.freesound.org/people/CGEffex/sounds/98335/)
+Mirors_         - Pshshsh (http://www.freesound.org/people/Mirors_/sounds/81205/)
+juskiddink		- SoftHit1 (http://www.freesound.org/people/juskiddink/sounds/108617/)
+jenc			- BlastMetal (http://www.freesound.org/people/jenc/sounds/511/)
+				- Elevator/Drilling (http://www.freesound.org/people/jenc/sounds/519/)
+gelo_papas		- Balloon/Inflate (http://www.freesound.org/people/gelo_papas/sounds/52070/)
+FreqMan			- Cash (http://www.freesound.org/people/FreqMan/sounds/31377/)
+fresco			- Munch1 (http://www.freesound.org/people/fresco/sounds/48933/)
+cambra			- FanLoop (http://www.freesound.org/people/Cambra/sounds/102710/)
+Halleck			- Electrical (http://www.freesound.org/people/Halleck/sounds/19483/)
+digifishmusic	- LiquidBlast2 (http://www.freesound.org/people/digifishmusic/sounds/45439/)
+HerbertBoland	- WoodHit1-3 (http://www.freesound.org/people/HerbertBoland/sounds/33206/)
+				- Clonk/StepSoft1-6, Clonk/StepHard1-5 (http://www.freesound.org/people/HerbertBoland/sounds/31962/)
+Erdie			- LightMetalHit1 (http://www.freesound.org/people/Erdie/sounds/27826/)
+Anton			- DullWoodHit1 (http://www.freesound.org/people/Anton/sounds/1257/)
+CGEffex			- Inflame (http://www.freesound.org/people/CGEffex/sounds/94102/)
+dobroide		- Fire (http://www.freesound.org/people/dobroide/sounds/4211/)
+bennychico11	- FHurt1, FHurt2 (http://www.freesound.org/people/bennychico11/sounds/80438/)
+cmusounddesign	- HingeCreak* (http://freesound.org/people/cmusounddesign/sounds/126302/)
+earthsounds		- WheelsTurn (http://freesound.org/people/earthsounds/sounds/101486/)
+qubodup         - Sizzle (http://www.freesound.org/people/qubodup/sounds/194635/)
+Aiwha           - Ding (modified) (http://freesound.org/people/Aiwha/sounds/196106/)
+discokingmusic	- Connect (http://www.freesound.org/people/discokingmusic/sounds/271387/)
+luffy           - SmokeSizzle (https://www.freesound.org/people/luffy/sounds/17299/)
+Pullover        - PropellerLoop (from Milch (EngineLoop))
+daveincamas		- StoneDoor/Chain (http://www.freesound.org/people/daveincamas/sounds/44076/)
+pempi			- Elevator/Start, Elevator/Moving, Elevator/Stop (http://www.freesound.org/people/pempi/sounds/33873/)
+Traveler 		- Pop (http://www.freesound.org/people/Traveler/sounds/16064/)
+Pat 			- Clonk/Roll, Clonk/Rustle1-4, Clonk/RustleLand, (http://www.freesound.org/people/pwausc1/sounds/118259/)
+Stephen Hall 	- Clonk/Dig1-5 (http://www.freesound.org/people/shall555/sounds/72199/)
+sarge4267       - BlastFireworks (http://www.freesound.org/people/soundscalpel.com/sounds/110391)
+broumbroum 		- Cleared (http://www.freesound.org/people/broumbroum/sounds/50565/)
+Sergenious		- StoneDoor/GateHit(http://www.freesound.org/people/Sergenious/sounds/55820/)
+volivieri		- Waterfall (http://www.freesound.org/people/volivieri/sounds/38390/)
+D W				- RainStereo (modified) (http://www.freesound.org/people/D%20W/sounds/136971/)
+alinmear		- CicadasLoopStereo (modified) (http://www.freesound.org/people/alinmear/sounds/217253/)
+zimbot			- Chippie/EggCrack1-3 (modified) (http://www.freesound.org/people/zimbot/sounds/244480/)
+klankbeeld		- SeaWavesStereo (modified) (http://www.freesound.org/people/klankbeeld/sounds/187367/)
+				- WolfAmbientStereo1-6 (http://www.freesound.org/people/klankbeeld/sounds/133763/)
+simcotter		- WolfAmbientStereo1-6 (http://www.freesound.org/people/simcotter/sounds/115357/)			
+MirandaHuang	- Waterdrop3-7 (modified) (http://www.freesound.org/people/MirandaHuang/sounds/221078/)
+
+Julien Matthey	- Fireball (http://www.freesound.org/people/Julien%20Matthey/sounds/105016/)
+Connum			- GlassShatter (http://www.freesound.org/people/Connum/sounds/66520/)
+Christian James Muise	- Tree/Chop1-5.wav (http://www.freesound.org/people/hazure/sounds/23700/)
+primeval_polypod- Boompack/Fly (http://www.freesound.org/people/primeval_polypod/sounds/158894/)
+Sven2           - Structures/StoneGate/GateMove (adapted from GateHit), IceHit* (adapted from GlassHit*), PlaneCrash,
+                  DiamondDigOut (adapted from GlassHit), FishMunch1 (adapted from Munch), Wallkit/Klick, Wallkit/Lock, OpenBuyMenu, CloseBuyMenu
+                  CloseViewport (based on WaterBottleBoing by empraetorius (https://freesound.org/people/empraetorius/sounds/201260/)
+                  Corrode (based on Pshshsh from Mirors_ http://www.freesound.org/people/Mirors_/sounds/81205/), UI/Select, UI/Open, UI/Close
+Zapper          - Breathing
+
+	
+===============================================================================
+
+The following sound effects are licensed under Creative Commons Attribution-ShareAlike 4.0
+
+Niels Krabbe 	- HumBirdCall1 (modified, www.xeno-canto.org/250456 - XC250456)
+Niels Krabbe 	- HumBirdCall2 (modified, www.xeno-canto.org/250456 - XC250456)
+
+===============================================================================
+
+The following sound effects are licensed under the CC 0 license (public domain):
+
+mrmayo			- Balloon/Pop (http://www.freesound.org/people/mrmayo/sounds/77039/)
+adcbicycle		- SoftTouch* (http://www.freesound.org/people/adcbicycle/sounds/13878/ and http://www.freesound.org/people/adcbicycle/sounds/13914/)
+				- SoftHit2 (http://www.freesound.org/people/adcbicycle/sounds/13866/)
+				- GeneralHit1 (http://www.freesound.org/people/adcbicycle/sounds/13860/)
+				- GeneralHit2 (http://www.freesound.org/people/adcbicycle/sounds/13899/)
+				- DullMetalHit1 (http://www.freesound.org/people/adcbicycle/sounds/13854/)
+				- DullMetalHit2 (http://www.freesound.org/people/adcbicycle/sounds/13876/)
+				- DullMetalHit3 (http://freesound.org/people/adcbicycle/sounds/13831/)
+				- DullWoodHit2 (http://www.freesound.org/people/adcbicycle/sounds/13958/)
+				- GlassHit1 (http://www.freesound.org/people/adcbicycle/sounds/13936/)
+				- GlassHit2 (http://www.freesound.org/people/adcbicycle/sounds/13931/)
+thecheeseman    - Clonk/Verbal/Hurt*, Clonk/Verbal/Die (http://www.freesound.org/people/thecheeseman/)
+110110010,		- CatapultLaunch (http://www.freesound.org/people/110110010/sounds/66396/, http://www.freesound.org/people/schluppipuppie/sounds/12833/)
+  schluppipuppie
+Oddworld		- LiquidBlast1 (http://www.freesound.org/people/Oddworld/sounds/75328/)
+mbezzola		- RockHit1-3 (http://www.freesound.org/people/mbezzola/sounds/105282/)
+RytmenPinnen	- Fuse/FuseLoop/FuseShort (http://www.freesound.org/people/RytmenPinnen/sounds/102264/)
+kibibu			- LightMetalHit2 (http://www.freesound.org/people/kibibu/sounds/22435/)
+prozaciswack	- Earthquake (http://www.freesound.org/people/prozaciswack/sounds/82722/)
+alienistcog		- WoodCreak1-3 (http://freesound.org/people/alienistcog/sounds/123712/)
+fryzu82			- Boiling (http://freesound.org/people/fryzu82/sounds/142333/)
+Adam_N			- Blowout (http://freesound.org/people/Adam_N/sounds/166126/)
+BenNevis		- SteamEngine (http://freesound.org/people/BenNevis/sounds/203175/)
+felix.blume		- Pumpjack (http://freesound.org/people/felix.blume/sounds/203990/)
+parnellij		- PukaTeleportIn/Out(http://www.freesound.org/people/parnellij/sounds/74892/)
+Kane53126		- Click2 (http://www.freesound.org/people/Kane53126/sounds/257944/)
+Zywx			- MosquitoBuzz (http://www.freesound.org/people/Zywx/sounds/188708/)
+tc630			- Furnace/Start, Furnace/Stop, Furnace/Loop(http://www.freesound.org/people/tc630/sounds/47835/)
+kolczok			- SawmillRipcut(http://freesound.org/people/kolczok/sounds/198988/)
+
+
+===============================================================================
+
+Sounds with unknown source:
+-TreeCrack, TreeLanding, BoomPackLaunch
+
+planet/Sound.ocg/UI.ocg/Tick.ogg

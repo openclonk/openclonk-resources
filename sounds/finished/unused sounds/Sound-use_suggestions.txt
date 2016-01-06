@@ -1,0 +1,70 @@
+In general I made a lot of variations of most sounds, so you can often use a random parameter to get more variety.
+
+==== Animals:
+
+Bat\Noises - Background ambience sounds for caves
+Puka\Gulp - I don't know if the puka can do it, but at the beginning it was mentioned that it might eath fish, so this is an eating sound for swallowing a fish.
+
+Bat/Mooq/HumBird-Sounds, are sounds for unfinished animals from the milestone project.
+Pig-Sounds created this by accident, we don't have a pig (also not planned) but it might fit somewhere?
+
+Wipf: Some weep sounds, maybe played at random for cuteness if the wipf is close to the clonk and if the wipf gets hurt, I also made an additional Snuff Sound.
+
+==== Clonk
+
+First lets cover the skins:
+Currently the standard Clonk (adventurer), the sunglass Clonk (Alchemist) and the brown-reddish heared girl (Steam punk girl) have a skin set, the dark haired brunette doesn't have a skin, but I will schedule a recording for januar, also some npc voices can be done if that is wanted (should be mentioned till then).
+
+The skin sounds replace the current sounds: Die, Confirm and Hurt.
+They also add new sounds: Decline, Doubt, Reluctant and also a Scream. They can be used for adventures, but also in the main game if someone sees a use for it. The decline sounds could be used for actions that are impossible, replacing the "Hmm" sound that was featured in ClonkRage and provide feedback instead of spamming error messages to the player. We should be able to imagine a lot of, for example not having space for a building. We could also go back to the Clonk Rage source and search where the sound was used.
+
+The skins also have some additonal sounds that are unique for every Skin. They are not so serious all the time,will add some more variaty and possibilities to adventures.
+
+Outside the Skin-Sounds we have:
+Repair/Finish Buildings - which were requested by Zapper.
+Cough, Burp1-2 - are some general useable sounds for all skins.
+Whistling1-2 are easter egg sounds whistling the former Clonk theme.
+Whistle1-5 - don't see a use for them yet, but included them nevertheless.
+
+Movement\LeaveStep and LeaveStepSnow: Should be added to the current step sounds, and can sometimes played in Grass or on snow.
+Action\Munch2: I added another munch sound though it is very soft compared to the other munch sound. Should be tested.
+Action\Diving\DivingLoop1-3: Are background sounds that should be played while the clonk swims or dives. They are a mix of water and breathing.
+
+==== Environment:
+
+Rockfall 1-2 - For some rock movement, probably best for some earth spell/magic scroll? Another idea: Could be tried out as an ambient sound underground.
+
+CicadasStereo: Ambient Sound for nights, requested, loopable
+SeaWavesStereo: Ambient Sound for waves, was requested, loopable
+WolfAmbientStereo: Night ambient, was requested.
+
+==== Fire & Explosions:
+
+Spark1-3: They are similar to the Fuse-shorter, but very short. Use could include a flint hitting something with low speed, and hence not exploding.
+Blast4: Is a really nice new explosion sound by K-Pone which should be added to Items currently using Blast1-3. It also has a version under water which is BlastLiquid4.
+Blast4Noise1-4: This are ment for some variety for the fireworks, similar to BlastFireworks.
+
+BlastMetal: I softend it a bit, requested, see: http://bugs.openclonk.org/view.php?id=1492
+
+==== Hits:
+
+Materials\Glass\Glass Break: For the lamp when breaking. Previously it had GlassHit which sounded not correct since the lamp shatters.
+OrganicHit1-2: This was requested, forgot whatfor.
+
+==== Liquids:
+
+Waterdrop1-7: They were ment for the stalactits having small particle-water drops and can be played their. Also frequent and randomly in caves for atmosphere.
+Bubble1-3: They were requested for the Lava bubbles.
+BubblesLoop: Another try, were requested for lava/acid bubbles again. They sound like a fluent stream.
+RainStereo: This is for the particle rain, it is loopable and can be started at a random position if it is started with a fade in. The rain sound can be adjusted with volume to the amount of rain currently present.
+
+=== Magic
+MagicWind1-2: A random sound that was not played, can't see a use till now. But might again work in adventures.
+
+=== Objects
+Weapons\SwordHit1 - a new sword hit sound done by K-Pone, should be added to the list of sounds played while hitting with the sword.
+Weapons\Musket\NoAmmunition1-3 - if you click with a musket while not having ammo.
+
+=== UserInterface
+
+Added the sounds "Cancel" and "Error", they are again a random product actually from a harp recording. Might be useful or not.
