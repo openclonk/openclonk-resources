@@ -7,10 +7,10 @@ Author        Work(s)
 ala				- 
 				  Animal:
 				  Zap/Zap1-5 ; PigGrunt1-4 ; Wipf/Weep3-8 ; Mooq: Snort1-3, Snorting1-2, Die1-5, DieFat, Spit1-2, Hurt1-2, Munch1-4 ; 
-				  Monster/Growl4-6 ; Bat: Bat1-4, Wing1-4 ; Chippie: Crunch1-9, CrunchLong1-4
+				  Monster/Growl4-6 ; Bat: Bat1-4, Wing1-4 ; Chippie: Crunch1-9, CrunchLong1-4, Turtle: ShellHit1-4
 
 				  Other:
-				  UI/Error, UI/Cancel, Magic/MagicWind1-2, Objects: BucketHit1-2, BucketPut
+				  UI/Error, UI/Cancel, Magic/MagicWind1-2, Objects: BucketHit1-2, BucketPut, UI/Money1-4
 				  
 				  Liquids:
 				  BubblesLoop, Bubble1-3, Waterdrop1-2, 
