@@ -10,7 +10,7 @@ ala				-
 				  Monster/Growl4-6 ; Bat: Bat1-4, Wing1-4 ; Chippie: Crunch1-9, CrunchLong1-4, Turtle: ShellHit1-4
 
 				  Other:
-				  UI/Error, UI/Cancel, Magic/MagicWind1-2, Objects: BucketHit1-2, BucketPut, UI/Money1-4
+				  UI/Error, UI/Cancel, Magic/MagicWind1-2, Objects: BucketPut, UI/Money1-4
 				  
 				  Liquids:
 				  BubblesLoop, Bubble1-3, Waterdrop1-2, 
