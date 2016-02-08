@@ -11,6 +11,7 @@ ala				-
 
 				  Other:
 				  UI/Error, UI/Cancel, UI/ChatHighlite, Magic/MagicWind1-2, Objects: BucketPut, UI/Money1-4
+				  Objects/LorryDump1-2
 				  
 				  Liquids:
 				  BubblesLoop, Bubble1-3, Waterdrop1-2, 
