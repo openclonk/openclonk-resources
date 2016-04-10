@@ -10,7 +10,7 @@ ala				-
 				  Monster/Growl4-6 ; Bat: Bat1-4, Wing1-4 ; Chippie: Crunch1-9, CrunchLong1-4, Turtle: ShellHit1-4
 
 				  Other:
-				  UI/Error, UI/Cancel, UI/ChatHighlite, Magic/MagicWind1-2, Objects: BucketPut, UI/Money1-4
+				  UI/Error, UI/Cancel, UI/ChatHighlite, Magic/MagicWind1-2, Objects: BucketPut, UI/Money4
 				  
 				  Liquids:
 				  BubblesLoop, Bubble1-3, Waterdrop1-2, 
@@ -33,7 +33,7 @@ ala				-
 				  --- modified
 				  PetrifyShort1-3, PetrifyLong1-3 (made from: https://www.freesound.org/people/ecfike/sounds/177217/ CC 0 - by ecfike)
 				  
-K-Pone			- Fire & Explosion: Blast4, BlastLiquid4 ; Clonk/EvilLaugh, Materials/GlassHit3-4
+K-Pone			- Clonk/EvilLaugh, Materials/GlassHit3-4
 K-Pone & ala	- Fire & Explosion: Blast4Noise1-4
 
 D W				- RainStereo (modified) (http://www.freesound.org/people/D%20W/sounds/136971/)
