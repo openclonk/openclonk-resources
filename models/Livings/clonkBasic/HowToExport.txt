@@ -1,0 +1,16 @@
+General information:
+This is a modular clonk model that consists of rigged meshes. This should allow easy creation of new clonks, without having to tinker
+with details such as animations, and so on. Create your clonk by joining the meshes and export it. The instructions below will tell
+you what to do so that the clonk uses the animations of the original clonk.
+
+
+How to export:
+1. Adjust UVs as desired
+2. Rename material "enter_material_name" to your desired material name
+3. Join meshes under "armature" as desired
+4. Delete the unnecessary meshes
+5. a) If you want to create a new clonk:
+      Rename the mesh datablock to "include.Clonk" => this is necessary so that it will use the skeleton "include.Clonk.skeleton" after the export
+   b) If you want to create a skin for the original clonk:
+      Rename the mesh datablock to "Clonk" => it should use the 
+6. When using the exported mesh in one of your objects, use the "include.Clonk.skeleton" from this directory, because the exported skeleton may be broken
