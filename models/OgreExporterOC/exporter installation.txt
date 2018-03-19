@@ -1,0 +1,10 @@
+Only tested on Blender 2.71
+
+Move
+	io_export_ogreDotSceneClonk.py
+	OgreMain.dll
+	OgreXmlConverter.exe
+to
+	\Blender Foundation\Blender\2.71\scripts\addons
+
+In Blender use File > Export > Ogre3D Clonk
